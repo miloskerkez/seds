@@ -1,0 +1,6 @@
+com\devtech\service\PersonService.class
+com\devtech\viewModel\ViewDog.class
+com\devtech\service\DogServiceImpl.class
+com\devtech\service\DogService.class
+com\devtech\viewModel\ViewPerson.class
+com\devtech\service\PersonServiceImpl.class

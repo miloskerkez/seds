@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+Select collection:
+<label>
+    <select ng-model="choice">
+        <option value="Books1">Books1</option>
+        <option value="Books2">Books2</option>
+    </select>
+</label>
+<input class="btn btn-primary" type="submit" ng-click="loadData(choice)" value="Show books">
+<br>
+<br>
+<table class="table">
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddPerson()" value="ADD PERSON">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddDog()" value="ADD DOG">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToSeePerson()" value="SEE PERSONS">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToSeeDog()" value="SEE DOGS">
+    </td>
+</table>
+<div>{{noMessage}}</div>
+</body>
+</html>

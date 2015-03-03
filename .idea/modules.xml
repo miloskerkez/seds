@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SEDSProject.iml" filepath="$PROJECT_DIR$/SEDSProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleProAngular/SimpleProAngular.iml" filepath="$PROJECT_DIR$/SimpleProAngular/SimpleProAngular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleProBLL/SimpleProBLL.iml" filepath="$PROJECT_DIR$/SimpleProBLL/SimpleProBLL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleProDataAccess/SimpleProDataAccess.iml" filepath="$PROJECT_DIR$/SimpleProDataAccess/SimpleProDataAccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleProSpring/SimpleProSpring.iml" filepath="$PROJECT_DIR$/SimpleProSpring/SimpleProSpring.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+com\devtech\repository\PersonRepository.class
+com\devtech\repository\DogRepository.class
+com\devtech\model\Dog.class
+com\devtech\model\Person.class

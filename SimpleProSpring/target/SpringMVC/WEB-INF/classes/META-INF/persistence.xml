@@ -1,0 +1,14 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistance_2_0.xsd"
+             version="2.0">
+
+            <persistence-unit name="punit">
+                <class>com.devtech.model.Manager</class>
+                <class>com.devtech.model.Bank</class>
+                <class>com.devtech.model.Club</class>
+                <class>com.devtech.model.Competition</class>
+                <class>com.devtech.model.Contract</class>
+                <class>com.devtech.model.Player</class>
+            </persistence-unit>
+</persistence>

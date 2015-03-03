@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ADD DOG</title>
+</head>
+<body>
+    <form name="addDogForm" ng-submit="addDog(dog,newPers)">
+        Select Person:
+        <label>
+            <select ng-model="newPers">
+                    <option ng-repeat="per in persons" value="{{per}}">{{per.personName}}</option>
+            </select>
+        </label>
+        <table class="table">
+            <tr>
+                <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="dog.name">
+                    <span class="error" ng-show="addDogForm.nameInput.$touched && !addDogForm.nameInput.$dirty">Enter Name!</span></th>
+                <th><input class="btn btn-success" type="submit" value="Add Dog"></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

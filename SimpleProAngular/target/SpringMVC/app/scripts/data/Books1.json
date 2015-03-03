@@ -1,0 +1,28 @@
+{
+"books" : [
+{
+"name": "seven",
+"year": 1993,
+"author": "writer",
+"pages": 214,
+"category": "drama",
+"price": 50
+}
+,
+{
+"name": "Lost",
+"year": 2004,
+"author": "Some crazy writer",
+"pages": 231,
+"category": "mystery",
+"price": 600
+},{
+"name": "words",
+"year": 1999,
+"author": "I'm not sure",
+"pages": 259,
+"category": "thriller",
+"price": 900
+}
+]
+}

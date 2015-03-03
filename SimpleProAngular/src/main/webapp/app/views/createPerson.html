@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ADD PERSON</title>
+</head>
+<body>
+
+    <form name="addPersonForm" ng-submit="addPerson(newPerson)">
+        <table class="table">
+            <tr>
+                <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="newPerson.name">
+                    <span class="error" ng-show="addPersonForm.nameInput.$touched && !addPersonForm.nameInput.$dirty">Enter Name!</span></th>
+                <th><input name="ageInput" class="form-control" required type="number" placeholder="Age" ng-model="newPerson.age">
+                    <span class="error" ng-show="addPersonForm.ageInput.$touched && !addPersonForm.ageInput.$dirty">Enter Age!</span></th>
+                <th><input class="btn btn-success" type="submit" value="Add Person"></th>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
