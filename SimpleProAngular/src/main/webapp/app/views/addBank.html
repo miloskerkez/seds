@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="addBankForm" ng-submit="addBank(newBank)">
+    <table class="table">
+        <tr>
+            <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="newBank.bankName">
+                <span class="error" ng-show="addBankForm.nameInput.$touched && !addBankForm.nameInput.$dirty">Enter Name!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Add Bank"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

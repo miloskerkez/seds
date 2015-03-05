@@ -55,6 +55,15 @@ angular
             .when('/updDog', {
                 templateUrl: 'views/updateDog.html',
                 controller: 'DogCtrl'
+            }).when("/bank", {
+                templateUrl: 'views/addBank.html',
+                controller: 'BankCtrl'
+            }).when('/competition',{
+                templateUrl: 'views/addCompetition.html',
+                controller: 'CompetitionCtrl'
+            }).when('/club', {
+                templateUrl: 'views/addClub.html',
+                controller: 'ClubCtrl'
             })
             .otherwise('/first');
     });

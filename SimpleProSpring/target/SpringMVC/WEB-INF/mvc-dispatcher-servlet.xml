@@ -16,9 +16,9 @@
 
 	<context:annotation-config />
 
-	<context:component-scan base-package="com.devtech" />
+	<context:component-scan base-package="com.kerkez" />
 
-	<jpa:repositories base-package="com.devtech.repository"/>
+	<jpa:repositories base-package="com.kerkez.repository"/>
 
 	<mvc:annotation-driven />
 
@@ -47,7 +47,7 @@
 		<property name="jpaPropertyMap">
 			<map>
 				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL57InnoDBDialect"/>
-				<entry key="hibernate.hbm2ddl.auto" value="create"/>
+				<entry key="hibernate.hbm2ddl.auto" value="update"/>
 				<entry key="hibernate.format_sql" value="true"/>
 			</map>
 		</property>

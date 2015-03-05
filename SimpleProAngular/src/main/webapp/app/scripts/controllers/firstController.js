@@ -14,6 +14,9 @@
         $scope.goToAddDog = goToAddDog;
         $scope.goToSeePerson = goToSeePerson;
         $scope.goToSeeDog = goToSeeDog;
+        $scope.goToAddBank = goToAddBank;
+        $scope.goToAddCompetition = goToAddCompetition;
+        $scope.goToAddClub = goToAddClub;
 
         /**
          * send parameter via url to retrieve wanted data depending of which checkbox is checked
@@ -67,6 +70,18 @@
          */
         function goToSeeDog() {
             $location.path('dog')
+        }
+
+        function goToAddBank() {
+            $location.path('bank')
+        }
+
+        function goToAddCompetition(){
+            $location.path('competition')
+        }
+
+        function goToAddClub(){
+            $location.path('club')
         }
 
     }

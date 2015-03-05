@@ -4,11 +4,11 @@
              version="2.0">
 
             <persistence-unit name="punit">
-                <class>com.devtech.model.Manager</class>
-                <class>com.devtech.model.Bank</class>
-                <class>com.devtech.model.Club</class>
-                <class>com.devtech.model.Competition</class>
-                <class>com.devtech.model.Contract</class>
-                <class>com.devtech.model.Player</class>
+                <class>com.kerkez.model.Manager</class>
+                <class>com.kerkez.model.Bank</class>
+                <class>com.kerkez.model.Club</class>
+                <class>com.kerkez.model.Competition</class>
+                <class>com.kerkez.model.Contract</class>
+                <class>com.kerkez.model.Player</class>
             </persistence-unit>
 </persistence>
