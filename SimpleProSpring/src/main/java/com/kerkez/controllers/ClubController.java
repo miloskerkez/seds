@@ -4,10 +4,9 @@ import com.kerkez.model.Club;
 import com.kerkez.service.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Created by milos.kerkez on 3/5/2015.
@@ -23,5 +22,13 @@ public class ClubController {
     @ResponseBody
     public void doSomeThing(@RequestBody Club input) {
         clubService.save(input);
+    }
+
+    @RequestMapping(value = "getViewClub", method = RequestMethod.GET, produces = "application/json")
+    public
+    @ResponseBody
+    List<Club> getClubss() {
+        List<Club> viewClubList = clubService.load();
+        return viewClubList;
     }
 }

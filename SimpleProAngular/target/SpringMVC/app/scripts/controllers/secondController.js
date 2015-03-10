@@ -12,7 +12,7 @@
     $scope.addBook = addBook;
     $scope.clearText = clearText;
 
-    getData($routeParams.param);
+    getData($routeParams.witchBook);
 
     /**
      * Model for storing data from html to addBook()

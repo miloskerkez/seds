@@ -2,54 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="112457a5-54ce-47ba-9991-dfc50f815b7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\controllers\dogController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\controllers\firstController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\controllers\jsonController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\controllers\personController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\service\dogService.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\service\personService.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\src\main\webapp\app\scripts\service\service.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\target\SpringMVC\app\scripts\controllers\dogController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\target\SpringMVC\app\scripts\controllers\personController.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\target\SpringMVC\app\scripts\service\dogService.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\target\SpringMVC\app\scripts\service\personService.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Bank.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Club.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Competition.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Contract.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Manager.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\model\Player.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\BankRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\ClubRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\CompetitionRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\ContractRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\ManagerRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\target\classes\com\devtech\repository\PlayerRepository.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Bank.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Bank.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Club.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Competition.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Contract.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Contract.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Manager.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Manager.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\model\Player.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Player.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\BankRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/BankRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\ClubRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/ClubRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\CompetitionRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/CompetitionRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\ContractRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/ContractRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\ManagerRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/ManagerRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProDataAccess\src\main\java\com\devtech\repository\PlayerRepository.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/repository/PlayerRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/BankController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/BankController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/BankController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/BankController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/BankService.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/BankService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/BankServiceImpl.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/BankServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProDataAccess/target/classes/com/kerkez/model/Club.class" afterPath="$PROJECT_DIR$/SimpleProDataAccess/target/classes/com/kerkez/model/Club.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/ClubController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/ClubController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/ClubController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/ClubController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/ClubService.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/ClubService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/ClubServiceImpl.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/ClubServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProDataAccess/target/classes/com/kerkez/model/Competition.class" afterPath="$PROJECT_DIR$/SimpleProDataAccess/target/classes/com/kerkez/model/Competition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/CompetitionController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/com/kerkez/controllers/CompetitionController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/CompetitionController.class" afterPath="$PROJECT_DIR$/SimpleProSpring/target/classes/com/kerkez/controllers/CompetitionController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/CompetitionService.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/CompetitionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/CompetitionServiceImpl.class" afterPath="$PROJECT_DIR$/SimpleProBLL/target/classes/com/kerkez/service/CompetitionServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/lib/SimpleProBLL-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/lib/SimpleProBLL-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/lib/SimpleProDataAcces-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/lib/SimpleProDataAcces-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankService.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/ClubController.java" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/ClubController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubService.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java" afterPath="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/CompetitionController.java" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/CompetitionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java" afterPath="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/SimpleProSpring.iml" afterPath="$PROJECT_DIR$/SimpleProSpring/SimpleProSpring.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/app.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/bankController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/bankController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/clubController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/clubController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/clubController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/clubController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/competitionController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/competitionController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/competitionController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/competitionController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/target/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/config/servlet-config.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/config/servlet-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/config/servlet-config.xml" afterPath="$PROJECT_DIR$/SimpleProSpring/target/SpringMVC/WEB-INF/config/servlet-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/views/first.html" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/views/first.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/firstController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/firstController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/firstController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/firstController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/secondController.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/controllers/secondController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js" afterPath="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/service/service.js" afterPath="$PROJECT_DIR$/SimpleProAngular/target/SpringMVC/app/scripts/service/service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleProject.iws" />
@@ -97,8 +93,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1173">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="1428">
+              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -107,28 +103,85 @@
       <file leaf-file-name="first.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="799">
-              <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+            <state vertical-scroll-proportion="-28.615385" vertical-offset="140" max-vertical-offset="1088">
+              <caret line="52" column="111" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firstController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/firstController.js">
+      <file leaf-file-name="Club.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.303233" vertical-offset="0" max-vertical-offset="1445">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1122">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="44" />
+              <folding>
+                <element signature="e#772#785#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Competition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36008918" vertical-offset="0" max-vertical-offset="897">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#757#763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allCompetitions.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allCompetitions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="408">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java">
+      <file leaf-file-name="competitionController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/competitionController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="731">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1683">
+              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompetitionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/CompetitionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <folding>
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompetitionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="323">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,22 +189,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bankService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/bankService.js">
+      <file leaf-file-name="CompetitionServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bankController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="612">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#872#873#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,20 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/devtech/controllers/DogController.java" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/devtech/service/DogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/devtech/service/PersonServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/devtech/viewModel/addDogViewModel.java" />
-        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/devtech/controllers/PersonController.java" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/createPerson.html" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/dogs.html" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/updateDog.html" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/updatePerson.html" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/addDog.html" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/dogService.js" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/personService.js" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/index.html" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/second.html" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/displayPerson.html" />
@@ -200,21 +233,35 @@
         <option value="$PROJECT_DIR$/SimpleProAngular/bower_components/angular/angular.js" />
         <option value="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Player.java" />
         <option value="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/config/servlet-config.xml" />
-        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java" />
         <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ContractService.java" />
         <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ContractServiceImpl.java" />
         <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ManagerServiceImpl.java" />
         <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/PlayerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java" />
         <option value="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Bank.java" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/bankService.js" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankService.java" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allBanks.html" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js" />
-        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubService.java" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allClubs.html" />
+        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/firstController.js" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allCompetitions.html" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/clubController.js" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/competitionController.js" />
+        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/ClubController.java" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java" />
+        <option value="$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/CompetitionController.java" />
+        <option value="$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html" />
+        <option value="$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java" />
       </list>
     </option>
   </component>
@@ -318,7 +365,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,6 +380,382 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProSpring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProDataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProDataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProDataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProDataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kerkez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProDataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kerkez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProBLL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProBLL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProBLL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProBLL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kerkez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleProBLL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kerkez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,6 +1016,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -609,7 +1032,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/SimpleProject" />
     <property name="recentsLimit" value="5" />
     <property name="js.buildTools.gulp.node_interpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\milos.kerkez\AppData\Roaming\npm\node_modules\gulp" />
@@ -1038,11 +1461,14 @@
       <workItem from="1425032742565" duration="2600000" />
       <workItem from="1425370796974" duration="7137000" />
       <workItem from="1425543646544" duration="2153000" />
+      <workItem from="1425645030172" duration="157000" />
+      <workItem from="1425975635907" duration="6643000" />
+      <workItem from="1425982339560" duration="462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213992000" />
+    <option name="totallyTimeSpent" value="221254000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1066,7 +1492,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1094,13 +1520,13 @@
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1121,7 +1547,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="143" />
+      <option name="time" value="153" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1130,60 +1556,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/addDog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457" vertical-offset="0" max-vertical-offset="871">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/createPerson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="459">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/updateDog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23421355" vertical-offset="0" max-vertical-offset="871">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/updatePerson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="425">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/second.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78205127" vertical-offset="927" max-vertical-offset="1785">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/dogs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23421355" vertical-offset="0" max-vertical-offset="871">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/displayPerson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4293915" vertical-offset="0" max-vertical-offset="871">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31772575" vertical-offset="956" max-vertical-offset="1938">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,30 +1627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36008918" vertical-offset="0" max-vertical-offset="5219">
           <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#884#890#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37904125" vertical-offset="255" max-vertical-offset="1292">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#843#851#0" expanded="true" />
-            <element signature="e#964#977#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,10 +1634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41248608" vertical-offset="259" max-vertical-offset="1326">
           <caret line="37" column="28" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1004#1012#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1293,9 +1641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <caret line="28" column="33" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1303,7 +1648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34837544" vertical-offset="274051" max-vertical-offset="444295">
           <caret line="16132" column="55" selection-start-line="16132" selection-start-column="48" selection-end-line="16132" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,7 +1655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.329806" vertical-offset="0" max-vertical-offset="567">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,15 +1670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35273367" vertical-offset="174" max-vertical-offset="1258">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,7 +1677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36486486" vertical-offset="90" max-vertical-offset="1394">
           <caret line="18" column="68" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,57 +1684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0337838" vertical-offset="0" max-vertical-offset="1513">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1409,7 +1691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,7 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,7 +1721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,45 +1732,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/bankService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5464983" vertical-offset="0" max-vertical-offset="1734">
           <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1173">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1499,29 +1743,241 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6822742" vertical-offset="0" max-vertical-offset="897">
           <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#663#672#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html">
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/secondController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="799">
-          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.24637681" vertical-offset="323" max-vertical-offset="1938">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/dogs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31228474" vertical-offset="0" max-vertical-offset="871">
+          <caret line="16" column="8" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/bankService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56856185" vertical-offset="0" max-vertical-offset="986">
+          <caret line="30" column="9" selection-start-line="20" selection-start-column="7" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/addBank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allBanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29276693" vertical-offset="0" max-vertical-offset="871">
+          <caret line="15" column="8" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/BankService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/bankController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="897">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/BankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37904125" vertical-offset="0" max-vertical-offset="897">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22584401" vertical-offset="1693" max-vertical-offset="2822">
+          <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51261467" vertical-offset="386" max-vertical-offset="1258">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allClubs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="442">
+          <caret line="18" column="8" selection-start-line="7" selection-start-column="1" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/firstController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.303233" vertical-offset="0" max-vertical-offset="1445">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1887">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="1428">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/allCompetitions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="408">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/clubController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/controllers/competitionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/scripts/service/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1683">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/ClubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/ClubServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProBLL/src/main/java/com/kerkez/service/CompetitionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProSpring/src/main/java/com/kerkez/controllers/CompetitionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProAngular/src/main/webapp/app/views/first.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.615385" vertical-offset="140" max-vertical-offset="1088">
+          <caret line="52" column="111" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Club.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1122">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <element signature="e#772#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleProDataAccess/src/main/java/com/kerkez/model/Competition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36008918" vertical-offset="0" max-vertical-offset="897">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#757#763#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

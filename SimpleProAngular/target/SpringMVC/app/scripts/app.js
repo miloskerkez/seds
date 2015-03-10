@@ -64,6 +64,15 @@ angular
             }).when('/club', {
                 templateUrl: 'views/addClub.html',
                 controller: 'ClubCtrl'
+            }).when('/getBanks',{
+                templateUrl: 'views/allBanks.html',
+                controller: 'BankCtrl'
+            }).when('/getClubs',{
+                templateUrl: 'views/allClubs.html',
+                controller: 'ClubCtrl'
+            }).when('/getCompetitions',{
+                templateUrl: 'views/allCompetitions.html',
+                controller: 'CompetitionCtrl'
             })
             .otherwise('/first');
     });

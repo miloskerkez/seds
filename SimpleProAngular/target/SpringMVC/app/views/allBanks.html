@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table class="table">
+    <tr><th>ID</th><th>Name</th></tr>
+    <tr ng-repeat="b in banks">
+        <td>{{b.bankId}}</td>
+        <td>{{b.bankName}}</td>
+        <td><button class="btn btn-danger" type="submit" ng-click="deleteDog(dogg.dogId)">Delete</button></td>
+        <td><button class="btn btn-primary" type="submit" ng-click="getThisDog(dogg.dogId)">Update</button></td>
+    </tr>
+</table>
+</body>
+</html>

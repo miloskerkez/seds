@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * Created by milos.kerkez on 3/5/2015.
@@ -22,5 +23,11 @@ public class BankServiceImpl implements BankService {
     @Transactional
     public Bank save(Bank bank) {
         return bankRepository.save(bank);
+    }
+
+    @Override
+    public List<Bank> load() {
+        List<Bank> banks = bankRepository.findAll();
+        return banks;
     }
 }

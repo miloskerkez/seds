@@ -7,10 +7,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
-/**
- * Created by milos.kerkez on 3/5/2015.
- */
+
 @Service("clubService")
 public class ClubServiceImpl implements ClubService {
 
@@ -22,5 +21,10 @@ public class ClubServiceImpl implements ClubService {
     @Transactional
     public Club save(Club club) {
         return clubRepository.save(club);
+    }
+
+    @Override
+    public List<Club> load() {
+        return clubRepository.findAll();
     }
 }

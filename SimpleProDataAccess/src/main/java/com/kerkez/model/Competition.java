@@ -9,27 +9,22 @@ import java.util.List;
  * Created by milos.kerkez on 3/3/2015.
  */
 @Entity
-@Table(name = "competition")
 public class Competition {
 
     @Id
     @GeneratedValue
-    @Column(name = "competitionid")
     private Long competitionId;
 
     @NotNull
-    @Column(name = "competitionname")
     private String competitionName;
 
     @NotNull
-    @Column(name = "competitiontype")
     private String competitionType;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "club_competition",
-            joinColumns = {@JoinColumn(name = "comid", referencedColumnName = "competitionid")},
-            inverseJoinColumns = {@JoinColumn(name = "cluid", referencedColumnName = "clubid")})
-    @Column(name = "competitionclubs")
+            joinColumns = {@JoinColumn(name = "comid", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "cluid", nullable = false, updatable = false)})
     private List<Club> competitionClubs = new ArrayList<Club>();
 
     public Long getCompetitionId() {

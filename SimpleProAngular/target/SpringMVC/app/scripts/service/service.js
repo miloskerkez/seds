@@ -12,7 +12,8 @@
         var service = {
             getFromServer: getFromServer,
             getDogs: getDogs,
-            setDataCRUD: setDataCRUD
+            setDataCRUD: setDataCRUD,
+            getAllData: getAllData
         };
         return service;
 
@@ -69,6 +70,19 @@
                 })
                 .error(function () {
                     deferred.reject("Request error.");
+                });
+            return deferred.promise;
+        }
+
+
+        function getAllData(url) {
+            var deferred = $q.defer();
+            $http.get(baseUrl + url)
+                .success(function (data) {
+                    deferred.resolve(data);
+                })
+                .error(function () {
+                    deferred.reject("couldn't pull data from module!");
                 });
             return deferred.promise;
         }

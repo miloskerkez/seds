@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * Created by milos.kerkez on 3/5/2015.
@@ -22,5 +23,10 @@ public class CompetitionServiceImpl implements CompetitionService {
     @Transactional
     public Competition save(Competition competition) {
         return competitionRepository.save(competition);
+    }
+
+    @Override
+    public List<Competition> load() {
+        return competitionRepository.findAll();
     }
 }

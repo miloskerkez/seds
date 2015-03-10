@@ -17,6 +17,9 @@
         $scope.goToAddBank = goToAddBank;
         $scope.goToAddCompetition = goToAddCompetition;
         $scope.goToAddClub = goToAddClub;
+        $scope.goToViewBanks = goToViewBanks;
+        $scope.goToViewClubs = goToViewClubs;
+        $scope.goToViewCompetitions = goToViewCompetitions;
 
         /**
          * send parameter via url to retrieve wanted data depending of which checkbox is checked
@@ -40,7 +43,7 @@
             if (!par) {
                 $scope.noMessage = "Please select one collection!!!";
             } else {
-                $location.path('second').search({param: par})
+                $location.path('second').search({witchBook: par})
             }
         }
 
@@ -83,6 +86,19 @@
         function goToAddClub(){
             $location.path('club')
         }
+
+        function goToViewBanks(){
+            $location.path('getBanks')
+        }
+
+        function goToViewClubs(){
+            $location.path('getClubs')
+        }
+
+        function goToViewCompetitions(){
+            $location.path('getCompetitions')
+        }
+
 
     }
 
