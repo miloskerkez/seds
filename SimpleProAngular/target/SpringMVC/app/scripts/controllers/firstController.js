@@ -20,6 +20,8 @@
         $scope.goToViewBanks = goToViewBanks;
         $scope.goToViewClubs = goToViewClubs;
         $scope.goToViewCompetitions = goToViewCompetitions;
+        $scope.goToAddManager = goToAddManager;
+        $scope.goToViewManagers = goToViewManagers;
 
         /**
          * send parameter via url to retrieve wanted data depending of which checkbox is checked
@@ -97,6 +99,14 @@
 
         function goToViewCompetitions(){
             $location.path('getCompetitions')
+        }
+
+        function goToAddManager(){
+            $location.path('manager')
+        }
+
+        function goToViewManagers(){
+            $location.path('getManagers')
         }
 
 

@@ -10,20 +10,16 @@ import java.util.List;
  * Created by milos.kerkez on 3/3/2015.
  */
 @Entity
-@Table(name="bank")
 public class Bank implements Serializable {
 
     @Id
     @GeneratedValue
-    @Column(name = "bankid")
     private Long bankId;
 
     @NotNull
-    @Column(name = "bankname")
     private String bankName;
 
     @OneToMany(mappedBy = "managerBank", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    @Column(name = "bankmanagers")
     private List<Manager> bankManagers = new ArrayList<Manager>();
 
     public Long getBankId() {

@@ -73,6 +73,13 @@ angular
             }).when('/getCompetitions',{
                 templateUrl: 'views/allCompetitions.html',
                 controller: 'CompetitionCtrl'
+            }).when('/manager', {
+                templateUrl: 'views/addManager.html',
+                controller: 'ManagerCtrl'
+            }).when('/getManagers',{
+                templateUrl: 'views/allManagers.html',
+                controller: 'ManagerCtrl'
             })
+
             .otherwise('/first');
     });

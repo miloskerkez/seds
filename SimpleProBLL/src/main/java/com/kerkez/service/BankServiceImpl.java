@@ -28,6 +28,7 @@ public class BankServiceImpl implements BankService {
     @Override
     public List<Bank> load() {
         List<Bank> banks = bankRepository.findAll();
+        //this is where i stop last time!!!! Convert this in view model and send back
         return banks;
     }
 }

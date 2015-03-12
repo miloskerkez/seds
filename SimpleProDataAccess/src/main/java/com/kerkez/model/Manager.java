@@ -10,35 +10,28 @@ import java.util.List;
  * Created by milos.kerkez on 3/3/2015.
  */
 @Entity
-@Table(name = "manager")
 public class Manager implements Serializable{
 
     @Id
     @GeneratedValue
-    @Column(name = "managerid")
     private Long managerId;
 
     @NotNull
-    @Column(name = "managerfirstname")
     private String managerFirstName;
 
     @NotNull
-    @Column(name = "managerlastname")
     private String managerLastName;
 
     @NotNull
-    @Column(name = "managernationality")
     private String managerNationality;
 
     @NotNull
-    @Column(name = "managermoney")
     private int managerMoney;
 
     @ManyToOne
     private Bank managerBank;
 
     @OneToMany(mappedBy = "playerManager", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    @Column(name = "managerplayers")
     private List<Player> managerPlayers = new ArrayList<Player>();
 
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="addManagerForm" ng-submit="addManager(mana,newBank)">
+    Select Person:
+    <label>
+        <select ng-model="newBank">
+            <option ng-repeat="ban in allbanks" value="{{ban}}">{{ban.bankName}}</option>
+        </select>
+    </label>
+    <table class="table">
+        <tr>
+            <th><input name="FirstNameInput" class="form-control" required type="text" placeholder="FirstName" ng-model="mana.firstName">
+                <span class="error" ng-show="addManagerForm.nameInput.$touched && !addManagerForm.FirstNameInput.$dirty">Enter Name!</span></th>
+            <th><input name="LastNameInput" class="form-control" required type="text" placeholder="LastName" ng-model="mana.lastName">
+                <span class="error" ng-show="addManagerForm.nameInput.$touched && !addManagerForm.nameInput.$dirty">Enter Name!</span></th>
+            <th><input name="moneyInput" class="form-control" required type="number" placeholder="Name" ng-model="mana.managerMoney">
+                <span class="error" ng-show="addManagerForm.moneyInput.$touched && !addManagerForm.moneyInput.$dirty">Enter Name!</span></th>
+            <th><input name="nationalityInput" class="form-control" required type="text" placeholder="Name" ng-model="mana.managerNationality">
+                <span class="error" ng-show="addManagerForm.nationalityInput.$touched && !addManagerForm.nationalityInput.$dirty">Enter Name!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Add Dog"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
