@@ -1,6 +1,7 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Manager;
+import com.kerkez.viewModel.ManagerViewModel;
 
 import java.util.List;
 
@@ -10,5 +11,5 @@ import java.util.List;
 public interface ManagerService {
     Manager save(Manager manager);
 
-    List<Manager> load();
+    List<ManagerViewModel> load();
 }

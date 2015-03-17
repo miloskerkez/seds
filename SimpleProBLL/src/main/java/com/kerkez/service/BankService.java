@@ -1,6 +1,7 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Bank;
+import com.kerkez.viewModel.BankViewModel;
 
 import java.util.List;
 
@@ -10,5 +11,5 @@ import java.util.List;
 public interface BankService {
 
     Bank save(Bank bank);
-    List<Bank> load();
+    List<BankViewModel> load();
 }

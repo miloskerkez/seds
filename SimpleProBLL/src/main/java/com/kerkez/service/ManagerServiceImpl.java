@@ -2,10 +2,12 @@ package com.kerkez.service;
 
 import com.kerkez.model.Manager;
 import com.kerkez.repository.ManagerRepository;
+import com.kerkez.viewModel.ManagerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,7 +26,12 @@ public class ManagerServiceImpl implements ManagerService {
     }
 
     @Override
-    public List<Manager> load() {
-        return managerRepository.findAll();
+    public List<ManagerViewModel> load() {
+        List<Manager> managers = managerRepository.findAll();
+        List<ManagerViewModel> managersvm = new ArrayList<ManagerViewModel>();
+        for(Manager m: managers){
+            managersvm.add(new ManagerViewModel(m));
+        }
+        return managersvm;
     }
 }

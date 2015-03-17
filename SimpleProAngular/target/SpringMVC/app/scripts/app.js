@@ -79,6 +79,9 @@ angular
             }).when('/getManagers',{
                 templateUrl: 'views/allManagers.html',
                 controller: 'ManagerCtrl'
+            }).when('/getPlayers', {
+                templateUrl: 'views/allPlayers.html',
+                controller: 'PlayerCtrl'
             })
 
             .otherwise('/first');

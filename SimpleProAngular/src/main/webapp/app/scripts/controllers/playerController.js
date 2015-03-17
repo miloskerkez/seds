@@ -1,30 +1,18 @@
 (function () {
 
-    angular.module('thisApp').controller('ManagerCtrl', ManagerCtrl);
+    angular.module('thisApp').controller('PlayerCtrl', PlayerCtrl);
 
-    ManagerCtrl.$inject = ['$scope', '$location', '$routeParams', 'Service', '$route'];
+    PlayerCtrl.$inject = ['$scope', '$location', '$routeParams', 'Service', '$route'];
 
-    function ManagerCtrl($scope, $location, $routeParams, Service, $route) {
+    function PlayerCtrl($scope, $location, $routeParams, Service, $route) {
 
-        getBanks();
         getManagers();
-
-        $scope.addManager = addManager;
-        //$scope.allbanks = null;
-        $scope.managers = null;
+        getPlayers();
 
 
-        function getBanks() {
-            Service.getAllData('getViewBank').then(
-                function (data) {
-                    $scope.allbanks = data;
-                },
-                function (error) {
-                    $scope.noMessage = "error!!!!" + error;
-                });
-        }
 
-        function addManager(m, b) {
+
+        /*function addManager(m, b) {
             var r = JSON.parse(b);
             $scope.pera = {
                 managerFirstName: m.firstName,
@@ -42,12 +30,22 @@
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
                 });
-        }
+        }*/
 
         function getManagers() {
             Service.getAllData('getViewManager').then(
                 function (data) {
                     $scope.managers = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getPlayers(){
+            Service.getAllData('getViewPlayer').then(
+                function (data) {
+                    $scope.players = data;
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

@@ -9,7 +9,7 @@
     Select Person:
     <label>
         <select ng-model="newBank">
-            <option ng-repeat="ban in allbanks" value="{{ban}}">{{ban.bankName}}</option>
+            <option ng-repeat="ban in allbanks" value="{{ban}}">{{ban.bankvmName}}</option>
         </select>
     </label>
     <table class="table">
@@ -18,11 +18,11 @@
                 <span class="error" ng-show="addManagerForm.nameInput.$touched && !addManagerForm.FirstNameInput.$dirty">Enter Name!</span></th>
             <th><input name="LastNameInput" class="form-control" required type="text" placeholder="LastName" ng-model="mana.lastName">
                 <span class="error" ng-show="addManagerForm.nameInput.$touched && !addManagerForm.nameInput.$dirty">Enter Name!</span></th>
-            <th><input name="moneyInput" class="form-control" required type="number" placeholder="Name" ng-model="mana.managerMoney">
+            <th><input name="moneyInput" class="form-control" required type="number" placeholder="Money" ng-model="mana.managerMoney">
                 <span class="error" ng-show="addManagerForm.moneyInput.$touched && !addManagerForm.moneyInput.$dirty">Enter Name!</span></th>
-            <th><input name="nationalityInput" class="form-control" required type="text" placeholder="Name" ng-model="mana.managerNationality">
+            <th><input name="nationalityInput" class="form-control" required type="text" placeholder="Nationality" ng-model="mana.managerNationality">
                 <span class="error" ng-show="addManagerForm.nationalityInput.$touched && !addManagerForm.nationalityInput.$dirty">Enter Name!</span></th>
-            <th><input class="btn btn-success" type="submit" value="Add Dog"></th>
+            <th><input class="btn btn-success" type="submit" value="Add Manager"></th>
         </tr>
     </table>
 </form>

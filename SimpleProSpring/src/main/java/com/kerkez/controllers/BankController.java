@@ -2,6 +2,7 @@ package com.kerkez.controllers;
 
 import com.kerkez.model.Bank;
 import com.kerkez.service.BankService;
+import com.kerkez.viewModel.BankViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -28,8 +29,8 @@ public class BankController {
     @RequestMapping(value = "getViewBank", method = RequestMethod.GET, produces = "application/json")
     public
     @ResponseBody
-    List<Bank> getBankss() {
-        List<Bank> viewBankList = bankService.load();
+    List<BankViewModel> getBankss() {
+        List<BankViewModel> viewBankList = bankService.load();
         return viewBankList;
     }
 }

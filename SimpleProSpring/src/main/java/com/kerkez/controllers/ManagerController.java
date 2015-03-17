@@ -2,6 +2,7 @@ package com.kerkez.controllers;
 
 import com.kerkez.model.Manager;
 import com.kerkez.service.ManagerService;
+import com.kerkez.viewModel.ManagerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -27,8 +28,8 @@ public class ManagerController {
     @RequestMapping(value = "getViewManager", method = RequestMethod.GET, produces = "application/json")
     public
     @ResponseBody
-    List<Manager> getMangerss() {
-        List<Manager> viewManagerList = managerService.load();
+    List<ManagerViewModel> getMangerss() {
+        List<ManagerViewModel> viewManagerList = managerService.load();
         return viewManagerList;
     }
 }

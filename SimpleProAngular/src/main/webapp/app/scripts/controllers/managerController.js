@@ -10,7 +10,7 @@
         getManagers();
 
         $scope.addManager = addManager;
-        $scope.allbanks = null;
+        //$scope.allbanks = null;
         $scope.managers = null;
 
 
@@ -31,7 +31,7 @@
                 managerLastName: m.lastName,
                 managerNationality: m.managerNationality,
                 managerMoney: m.managerMoney,
-                managerBank: {"bankName": r.bankName, "bankId": r.bankId}
+                managerBank: {"bankName": r.bankvmName, "bankId": r.bankvmId}
             };
 
             Service.setDataCRUD($scope.pera, 'setManager').then(

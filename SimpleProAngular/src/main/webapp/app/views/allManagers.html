@@ -8,12 +8,12 @@
 <table class="table">
     <tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Nationality</th><th>Money</th><th>Bank</th></tr>
     <tr ng-repeat="ma in managers">
-        <td>{{ma.managerId}}</td>
-        <td>{{ma.managerFirstName}}</td>
-        <td>{{ma.managerLastName}}</td>
-        <td>{{ma.managerNationality}}</td>
-        <td>{{ma.managerMoney}}</td>
-        <td>{{ma.managerBank.bankName}}</td>
+        <td>{{ma.managervmId}}</td>
+        <td>{{ma.managervmFirstName}}</td>
+        <td>{{ma.managervmLastName}}</td>
+        <td>{{ma.managervmNationality}}</td>
+        <td>{{ma.managervmMoney}}</td>
+        <td>{{ma.managervmBankName}}</td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteDog(dogg.dogId)">Delete</button></td>
         <td><button class="btn btn-primary" type="submit" ng-click="getThisDog(dogg.dogId)">Update</button></td>
     </tr>

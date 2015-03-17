@@ -2,11 +2,13 @@ package com.kerkez.service;
 
 import com.kerkez.model.Bank;
 import com.kerkez.repository.BankRepository;
+import com.kerkez.viewModel.BankViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,9 +28,14 @@ public class BankServiceImpl implements BankService {
     }
 
     @Override
-    public List<Bank> load() {
+    public List<BankViewModel> load() {
         List<Bank> banks = bankRepository.findAll();
+        List<BankViewModel> banksvm = new ArrayList<BankViewModel>();
         //this is where i stop last time!!!! Convert this in view model and send back
-        return banks;
+        for(Bank b: banks){
+            BankViewModel bvm = new BankViewModel(b);
+            banksvm.add(bvm);
+        }
+        return banksvm;
     }
 }
