@@ -82,6 +82,9 @@ angular
             }).when('/getPlayers', {
                 templateUrl: 'views/allPlayers.html',
                 controller: 'PlayerCtrl'
+            }).when('/player',{
+                templateUrl: 'views/addPlayer.html',
+                controller: 'PlayerCtrl'
             })
 
             .otherwise('/first');

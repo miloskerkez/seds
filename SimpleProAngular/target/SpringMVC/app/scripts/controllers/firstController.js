@@ -23,6 +23,7 @@
         $scope.goToAddManager = goToAddManager;
         $scope.goToViewManagers = goToViewManagers;
         $scope.goToViewPlayers = goToViewPlayers;
+        $scope.goToAddPlayer = goToAddPlayer;
 
         /**
          * send parameter via url to retrieve wanted data depending of which checkbox is checked
@@ -112,6 +113,10 @@
 
         function goToViewPlayers(){
             $location.path('getPlayers')
+        }
+
+        function goToAddPlayer(){
+            $location.path('player')
         }
 
 

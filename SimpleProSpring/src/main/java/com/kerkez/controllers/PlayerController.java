@@ -1,13 +1,11 @@
 package com.kerkez.controllers;
 
+import com.kerkez.model.Player;
 import com.kerkez.service.PlayerService;
 import com.kerkez.viewModel.PlayerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,5 +26,11 @@ public class PlayerController {
     List<PlayerViewModel> getBankss() {
         List<PlayerViewModel> viewPlayerList = playerService.load();
         return viewPlayerList;
+    }
+
+    @RequestMapping("setPlayer")
+    @ResponseBody
+    public void doSomeThing(@RequestBody Player input) {
+        playerService.save(input);
     }
 }

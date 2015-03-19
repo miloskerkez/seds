@@ -1,5 +1,6 @@
 package com.kerkez.service;
 
+import com.kerkez.model.Player;
 import com.kerkez.viewModel.PlayerViewModel;
 
 import java.util.List;
@@ -10,4 +11,6 @@ import java.util.List;
 public interface PlayerService {
 
     List<PlayerViewModel> load();
+
+    Player save(Player player);
 }

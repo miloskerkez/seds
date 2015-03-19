@@ -29,4 +29,9 @@ public class PlayerServiceImpl implements PlayerService {
         }
         return pvm;
     }
+
+    @Override
+    public Player save(Player player) {
+        return playerRepository.save(player);
+    }
 }

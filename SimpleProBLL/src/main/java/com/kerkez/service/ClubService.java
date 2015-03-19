@@ -1,6 +1,7 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Club;
+import com.kerkez.viewModel.ClubViewModel;
 
 import java.util.List;
 
@@ -9,6 +10,6 @@ import java.util.List;
  */
 public interface ClubService {
     Club save(Club club);
-    List<Club> load();
+    List<ClubViewModel> load();
 
 }

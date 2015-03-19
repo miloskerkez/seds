@@ -2,11 +2,13 @@ package com.kerkez.service;
 
 import com.kerkez.model.Competition;
 import com.kerkez.repository.CompetitionRepository;
+import com.kerkez.viewModel.CompetitionViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,7 +28,12 @@ public class CompetitionServiceImpl implements CompetitionService {
     }
 
     @Override
-    public List<Competition> load() {
-        return competitionRepository.findAll();
+    public List<CompetitionViewModel> load() {
+        List<Competition> competitions = competitionRepository.findAll();
+        List<CompetitionViewModel> cvm = new ArrayList<CompetitionViewModel>();
+        for(Competition c:competitions){
+            cvm.add(new CompetitionViewModel(c));
+        }
+        return cvm;
     }
 }

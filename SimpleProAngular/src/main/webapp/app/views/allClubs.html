@@ -6,13 +6,16 @@
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>Year</th><th>City</th><th>Country</th><th>Name</th></tr>
+    <tr><th>ID</th><th>Year</th><th>City</th><th>Country</th><th>Name</th><th>Competitions</th></tr>
     <tr ng-repeat="c in clubs">
-        <td>{{c.clubId}}</td>
-        <td>{{c.clubBirthYear}}</td>
-        <td>{{c.clubCity}}</td>
-        <td>{{c.clubCountry}}</td>
-        <td>{{c.clubName}}</td>
+        <td>{{c.clubvmId}}</td>
+        <td>{{c.clubvmBirthYear}}</td>
+        <td>{{c.clubvmCity}}</td>
+        <td>{{c.clubvmCountry}}</td>
+        <td>{{c.clubvmName}}</td>
+        <td ng-repeat="comm in c.clubvmCompetition">
+            {{comm.competitionvmName}}
+        </td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteDog(dogg.dogId)">Delete</button></td>
         <td><button class="btn btn-primary" type="submit" ng-click="getThisDog(dogg.dogId)">Update</button></td>
     </tr>

@@ -2,6 +2,7 @@ package com.kerkez.controllers;
 
 import com.kerkez.model.Competition;
 import com.kerkez.service.CompetitionService;
+import com.kerkez.viewModel.CompetitionViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -27,8 +28,8 @@ public class CompetitionController {
     @RequestMapping(value = "getViewCompetitions", method = RequestMethod.GET, produces = "application/json")
     public
     @ResponseBody
-    List<Competition> getCompetition() {
-        List<Competition> viewCompetitionList = competitionService.load();
+    List<CompetitionViewModel> getCompetition() {
+        List<CompetitionViewModel> viewCompetitionList = competitionService.load();
         return viewCompetitionList;
     }
 }

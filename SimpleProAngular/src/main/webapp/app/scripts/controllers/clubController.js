@@ -8,10 +8,11 @@
 
         $scope.addClub = addClub;
         getClub();
+        getCompetition();
         $scope.clubs = null;
 
-        function addClub(obj) {
-            Service.setDataCRUD(obj, 'setClub').then(
+        function addClub(clubb) {
+            Service.setDataCRUD(clubb, 'setClub').then(
                 function (data) {
                     $scope.clubToAdd = data;
                     $location.path('first');
@@ -25,6 +26,16 @@
             Service.getAllData('getViewClub').then(
                 function (data) {
                     $scope.clubs = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getCompetition() {
+            Service.getAllData('getViewCompetitions').then(
+                function (data) {
+                    $scope.competitions = data;
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

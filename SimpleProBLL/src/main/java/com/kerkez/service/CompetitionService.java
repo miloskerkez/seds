@@ -1,6 +1,7 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Competition;
+import com.kerkez.viewModel.CompetitionViewModel;
 
 import java.util.List;
 
@@ -9,5 +10,5 @@ import java.util.List;
  */
 public interface CompetitionService {
     Competition save(Competition competition);
-    List<Competition> load();
+    List<CompetitionViewModel> load();
 }
