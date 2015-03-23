@@ -56,7 +56,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="C:\Users\milos.kerkez\Desktop\Moje\SimpleProject\SimpleProAngular\target/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/SimpleProAngular/target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="SimpleProAngular/web/Web" />
     </root>

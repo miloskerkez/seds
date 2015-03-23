@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="addContractForm" ng-submit="addContract(newContract, newPla)">
+
+    Select Player:
+    <label>
+        <select ng-model="newPla">
+            <option ng-repeat="pla in players" value="{{pla}}">{{pla.playervmLastName}}</option>
+        </select>
+    </label>
+
+    <table class="table">
+        <tr>
+            <th><input name="nameInput" class="form-control" required type="number" placeholder="Salary" ng-model="newContract.contractSalary">
+                <span class="error" ng-show="addContractForm.nameInput.$touched && !addContractForm.nameInput.$dirty">Enter FirstName!</span></th>
+            <th><input name="lastNameInput" class="form-control" required type="number" placeholder="Duration" ng-model="newContract.contractDuration">
+                <span class="error" ng-show="addContractForm.lastNameInput.$touched && !addContractForm.lastNameInput.$dirty">Enter LastName!</span></th>
+            <th><input class="btn btn-success" type="submit" value="ADD CONTRACT"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

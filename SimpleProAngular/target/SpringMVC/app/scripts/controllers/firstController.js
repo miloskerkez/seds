@@ -24,6 +24,7 @@
         $scope.goToViewManagers = goToViewManagers;
         $scope.goToViewPlayers = goToViewPlayers;
         $scope.goToAddPlayer = goToAddPlayer;
+        $scope.goToAddContract = goToAddContract;
 
         /**
          * send parameter via url to retrieve wanted data depending of which checkbox is checked
@@ -117,6 +118,10 @@
 
         function goToAddPlayer(){
             $location.path('player')
+        }
+
+        function goToAddContract(){
+            $location.path('contract')
         }
 
 

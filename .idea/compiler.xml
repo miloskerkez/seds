@@ -29,6 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SEDSProject" target="1.6" />
       <module name="SimpleProAngular" target="1.6" />
       <module name="SimpleProBLL" target="1.6" />
       <module name="SimpleProDataAccess" target="1.6" />
