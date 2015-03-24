@@ -16,7 +16,7 @@
         <td ng-repeat="comm in c.clubvmCompetition">
             {{comm.competitionvmName}}
         </td>
-        <td><button class="btn btn-danger" type="submit" ng-click="deleteDog(dogg.dogId)">Delete</button></td>
+        <td><button class="btn btn-danger" type="submit" ng-click="deleteClub(c.clubvmId)">Delete</button></td>
         <td><button class="btn btn-primary" type="submit" ng-click="getThisDog(dogg.dogId)">Update</button></td>
     </tr>
 </table>

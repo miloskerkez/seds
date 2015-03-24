@@ -6,6 +6,7 @@
 
     function BankCtrl($scope, $location, $routeParams, $route, Service) {
         $scope.addBank = addBank;
+        $scope.deleteBank = deleteBank;
         getBank();
         $scope.banks = null;
 
@@ -24,6 +25,17 @@
             Service.getAllData('getViewBank').then(
                 function (data) {
                     $scope.banks = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function deleteBank(d) {
+            Service.setDataCRUD(d, 'delBank').then(
+                function (data) {
+                    $scope.bankToDelete = data;
+                    $route.reload();
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

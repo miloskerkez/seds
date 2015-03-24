@@ -32,4 +32,10 @@ public class ManagerController {
         List<ManagerViewModel> viewManagerList = managerService.load();
         return viewManagerList;
     }
+
+    @RequestMapping("delManager")
+    @ResponseBody
+    public void delDog(@RequestBody Long m) {
+        managerService.delete(m);
+    }
 }

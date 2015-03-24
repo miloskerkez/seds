@@ -7,6 +7,7 @@
     function ClubCtrl($scope, $location, $routeParams, $route, Service) {
 
         $scope.addClub = addClub;
+        $scope.deleteClub = deleteClub;
         getClub();
         getCompetition();
         $scope.clubs = null;
@@ -36,6 +37,17 @@
             Service.getAllData('getViewCompetitions').then(
                 function (data) {
                     $scope.competitions = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function deleteClub(c) {
+            Service.setDataCRUD(c, 'delClub').then(
+                function (data) {
+                    $scope.clubToDelete = data;
+                    $route.reload();
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

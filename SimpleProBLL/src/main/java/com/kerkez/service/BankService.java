@@ -12,4 +12,6 @@ public interface BankService {
 
     Bank save(Bank bank);
     List<BankViewModel> load();
+
+    void delete(Long d);
 }

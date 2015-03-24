@@ -12,6 +12,7 @@
         $scope.addManager = addManager;
         //$scope.allbanks = null;
         $scope.managers = null;
+        $scope.deleteManger = deleteManger;
 
 
         function getBanks() {
@@ -48,6 +49,17 @@
             Service.getAllData('getViewManager').then(
                 function (data) {
                     $scope.managers = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function deleteManger(m) {
+            Service.setDataCRUD(m, 'delManager').then(
+                function (data) {
+                    $scope.managerToDelete = data;
+                    $route.reload();
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

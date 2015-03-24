@@ -12,4 +12,5 @@ public interface ClubService {
     Club save(Club club);
     List<ClubViewModel> load();
 
+    void delete(Long c);
 }

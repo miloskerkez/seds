@@ -12,4 +12,6 @@ public interface ManagerService {
     Manager save(Manager manager);
 
     List<ManagerViewModel> load();
+
+    void delete(Long m);
 }

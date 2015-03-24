@@ -1,7 +1,10 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Bank;
+import com.kerkez.model.Manager;
+import com.kerkez.model.Player;
 import com.kerkez.repository.BankRepository;
+import com.kerkez.repository.ManagerRepository;
 import com.kerkez.viewModel.BankViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,6 +24,10 @@ public class BankServiceImpl implements BankService {
     @Autowired
     private BankRepository bankRepository;
 
+    @Qualifier("managerRepository")
+    @Autowired
+    private ManagerRepository managerRepository;
+
     @Override
     @Transactional
     public Bank save(Bank bank) {
@@ -37,5 +44,19 @@ public class BankServiceImpl implements BankService {
             banksvm.add(bvm);
         }
         return banksvm;
+    }
+
+
+    @Override
+    public void delete(Long d) {
+        Bank bank = bankRepository.findOne(d);
+        List<Manager> managerList = bank.getBankManagers();
+        for (Manager m:managerList){
+            Manager manager = managerRepository.findOne(m.getManagerId());
+            Bank bank1 = bankRepository.findOne((long) 1);
+            manager.setManagerBank(bank1);
+            managerRepository.save(manager);
+        }
+        bankRepository.delete(d);
     }
 }

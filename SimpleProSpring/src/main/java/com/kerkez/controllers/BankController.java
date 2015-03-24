@@ -33,4 +33,10 @@ public class BankController {
         List<BankViewModel> viewBankList = bankService.load();
         return viewBankList;
     }
+
+    @RequestMapping("delBank")
+    @ResponseBody
+    public void delDog(@RequestBody Long d) {
+        bankService.delete(d);
+    }
 }

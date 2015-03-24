@@ -32,4 +32,10 @@ public class ClubController {
         List<ClubViewModel> viewClubList = clubService.load();
         return viewClubList;
     }
+
+    @RequestMapping("delClub")
+    @ResponseBody
+    public void delDog(@RequestBody Long c) {
+        clubService.delete(c);
+    }
 }
