@@ -19,7 +19,7 @@ public class Bank implements Serializable {
     @NotNull
     private String bankName;
 
-    @OneToMany(mappedBy = "managerBank", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "managerBank", fetch = FetchType.EAGER)
     private List<Manager> bankManagers = new ArrayList<Manager>();
 
     public Long getBankId() {

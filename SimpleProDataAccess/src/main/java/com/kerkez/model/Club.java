@@ -27,10 +27,13 @@ public class Club {
     @NotNull
     private String clubCity;
 
-    @OneToMany(mappedBy = "playerClub", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "playerClub", fetch = FetchType.EAGER)
     private List<Player> clubPlayers = new ArrayList<Player>();
 
-    @ManyToMany(mappedBy = "competitionClubs", fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "club_competition",
+            joinColumns = {@JoinColumn(name = "cluid", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "comid", nullable = false, updatable = false)})
     private List<Competition> clubCompetition = new ArrayList<Competition>();
 
     public Long getClubId() {

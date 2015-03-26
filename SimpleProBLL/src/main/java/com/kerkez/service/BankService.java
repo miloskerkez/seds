@@ -2,6 +2,7 @@ package com.kerkez.service;
 
 import com.kerkez.model.Bank;
 import com.kerkez.viewModel.BankViewModel;
+import com.kerkez.viewModel.UpdateBankViewModel;
 
 import java.util.List;
 
@@ -14,4 +15,8 @@ public interface BankService {
     List<BankViewModel> load();
 
     void delete(Long d);
+
+    Bank getOne(Long id);
+
+    void update(UpdateBankViewModel updateBankViewModel);
 }

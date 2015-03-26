@@ -31,7 +31,7 @@ public class Manager implements Serializable{
     @ManyToOne
     private Bank managerBank;
 
-    @OneToMany(mappedBy = "playerManager", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "playerManager", fetch = FetchType.EAGER)
     private List<Player> managerPlayers = new ArrayList<Player>();
 
 

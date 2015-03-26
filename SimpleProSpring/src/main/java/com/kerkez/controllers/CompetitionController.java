@@ -32,4 +32,10 @@ public class CompetitionController {
         List<CompetitionViewModel> viewCompetitionList = competitionService.load();
         return viewCompetitionList;
     }
+
+    @RequestMapping("delCompetition")
+    @ResponseBody
+    public void delCompetitionn(@RequestBody Long c) {
+        competitionService.delete(c);
+    }
 }

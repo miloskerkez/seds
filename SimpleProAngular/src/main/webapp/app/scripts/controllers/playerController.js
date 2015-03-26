@@ -11,6 +11,7 @@
         getClub();
 
         $scope.addPlayer = addPlayer;
+        $scope.deletePlayer = deletePlayer;
 
 
 
@@ -62,6 +63,17 @@
             Service.getAllData('getViewClub').then(
                 function (data) {
                     $scope.clubs = data;
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function deletePlayer(p) {
+            Service.setDataCRUD(p, 'delPlayer').then(
+                function (data) {
+                    $scope.playerToDelete = data;
+                    $route.reload();
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

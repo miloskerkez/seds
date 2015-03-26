@@ -88,6 +88,9 @@ angular
             }).when('/contract', {
                 templateUrl: 'views/addContract.html',
                 controller: 'ContractCtrl'
+            }).when('/updBank', {
+                templateUrl: 'views/updateBank.html',
+                controller: 'BankCtrl'
             })
 
             .otherwise('/first');

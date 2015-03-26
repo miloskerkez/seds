@@ -12,7 +12,7 @@
         <td>{{b.bankvmName}}</td>
         <td ng-repeat="m in b.bankvmManagers">{{m.managervmLastName}}</td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteBank(b.bankvmId)">Delete</button></td>
-        <td><button class="btn btn-primary" type="submit" ng-click="getThisDog(dogg.dogId)">Update</button></td>
+        <td><button class="btn btn-primary" type="submit" ng-click="getThisBank(b.bankvmId)">Update</button></td>
     </tr>
 </table>
 </body>

@@ -11,4 +11,6 @@ import java.util.List;
 public interface CompetitionService {
     Competition save(Competition competition);
     List<CompetitionViewModel> load();
+
+    void delete(Long c);
 }

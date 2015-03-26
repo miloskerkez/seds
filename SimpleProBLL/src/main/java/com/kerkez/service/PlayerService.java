@@ -13,4 +13,6 @@ public interface PlayerService {
     List<PlayerViewModel> load();
 
     Player save(Player player);
+
+    void delete(Long p);
 }

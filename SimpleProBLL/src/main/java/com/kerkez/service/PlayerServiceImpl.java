@@ -1,6 +1,7 @@
 package com.kerkez.service;
 
 import com.kerkez.model.Player;
+import com.kerkez.repository.ContractRepository;
 import com.kerkez.repository.PlayerRepository;
 import com.kerkez.viewModel.PlayerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,10 @@ public class PlayerServiceImpl implements PlayerService {
     @Autowired
     private PlayerRepository playerRepository;
 
+    @Qualifier("contractRepository")
+    @Autowired
+    private ContractRepository contractRepository;
+
     @Override
     public List<PlayerViewModel> load() {
         List<Player> playerList = playerRepository.findAll();
@@ -33,5 +38,12 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public Player save(Player player) {
         return playerRepository.save(player);
+    }
+
+    @Override
+    public void delete(Long p) {
+        Player player = playerRepository.findOne(p);
+        contractRepository.delete(player.getPlayerContract());
+        playerRepository.delete(p);
     }
 }

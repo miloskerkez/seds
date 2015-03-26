@@ -1,0 +1,22 @@
+<!-- 
+ Created on 3/26/2015.
+ @author milos.kerkez
+ -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="updFormBank" ng-submit="updateBank(bankToUpdate)">
+    <table class="table">
+        <tr>
+            <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="bankToUpdate.ubvmName">
+                <span class="error" ng-show="updFormBank.nameInput.$touched && !updFormBank.nameInput.$dirty">Enter Name!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Update Bank"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

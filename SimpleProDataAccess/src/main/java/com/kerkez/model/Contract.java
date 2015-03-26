@@ -8,20 +8,16 @@ import java.io.Serializable;
  * Created by milos.kerkez on 3/3/2015.
  */
 @Entity
-@Table(name = "contract")
 public class Contract implements Serializable{
 
     @Id
     @GeneratedValue
-    @Column(name = "contractid")
     private Long contractId;
 
     @NotNull
-    @Column(name = "contractsalary")
     private int contractSalary;
 
     @NotNull
-    @Column(name = "contractduration")
     private int contractDuration;
 
     @OneToOne(fetch = FetchType.EAGER)

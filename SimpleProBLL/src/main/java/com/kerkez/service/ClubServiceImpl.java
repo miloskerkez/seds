@@ -45,7 +45,7 @@ public class ClubServiceImpl implements ClubService {
         return cvm;
     }
 
-    //POTREBAN FIX
+    //POTREBAN FIX za brisanje za klubove koji imaju takmicenje
     @Override
     public void delete(Long c) {
         Club club = clubRepository.findOne(c);
@@ -56,7 +56,7 @@ public class ClubServiceImpl implements ClubService {
         List<Player> playerList = club.getClubPlayers();
         for(Player p: playerList){
             Player player = playerRepository.findOne(p.getPlayerId());
-            Club club1 = clubRepository.findOne((long) 11);
+            Club club1 = clubRepository.findOne((long) 1);
             player.setPlayerClub(club1);
             playerRepository.save(player);
         }

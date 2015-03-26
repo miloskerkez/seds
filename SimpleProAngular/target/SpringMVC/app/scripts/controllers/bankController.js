@@ -9,6 +9,10 @@
         $scope.deleteBank = deleteBank;
         getBank();
         $scope.banks = null;
+        $scope.getThisBank = getThisBank;
+        $scope.updateBank = updateBank;
+
+        $scope.bankToUpdate = $routeParams.param;
 
         function addBank(obj) {
             Service.setDataCRUD(obj, 'setBank').then(
@@ -36,6 +40,28 @@
                 function (data) {
                     $scope.bankToDelete = data;
                     $route.reload();
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getThisBank(id) {
+            Service.setDataCRUD(id, 'getBankWithId').then(
+                function (data) {
+                    $scope.bankToUpd = data;
+                    $location.path('updBank').search({param: $scope.bankToUpd})
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function updateBank(b) {
+            Service.setDataCRUD(b, 'updBank').then(
+                function (data) {
+                    $scope.bankToUpde = data;
+                    $location.path('getBanks');
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

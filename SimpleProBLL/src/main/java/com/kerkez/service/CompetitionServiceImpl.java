@@ -1,6 +1,8 @@
 package com.kerkez.service;
 
+import com.kerkez.model.Club;
 import com.kerkez.model.Competition;
+import com.kerkez.repository.ClubRepository;
 import com.kerkez.repository.CompetitionRepository;
 import com.kerkez.viewModel.CompetitionViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,10 @@ public class CompetitionServiceImpl implements CompetitionService {
     @Autowired
     private CompetitionRepository competitionRepository;
 
+    @Qualifier("clubRepository")
+    @Autowired
+    private ClubRepository clubRepository;
+
     @Override
     @Transactional
     public Competition save(Competition competition) {
@@ -35,5 +41,11 @@ public class CompetitionServiceImpl implements CompetitionService {
             cvm.add(new CompetitionViewModel(c));
         }
         return cvm;
+    }
+
+    @Override
+    public void delete(Long c) {
+        Competition competition = competitionRepository.findOne(c);
+        competitionRepository.delete(c);
     }
 }

@@ -21,10 +21,7 @@ public class Competition {
     @NotNull
     private String competitionType;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "club_competition",
-            joinColumns = {@JoinColumn(name = "comid", nullable = false, updatable = false)},
-            inverseJoinColumns = {@JoinColumn(name = "cluid", nullable = false, updatable = false)})
+    @ManyToMany(mappedBy = "clubCompetition", fetch = FetchType.EAGER)
     private List<Club> competitionClubs = new ArrayList<Club>();
 
     public Long getCompetitionId() {

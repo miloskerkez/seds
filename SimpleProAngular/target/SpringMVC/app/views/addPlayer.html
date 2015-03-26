@@ -6,14 +6,14 @@
 </head>
 <body>
 <form name="addPlayerForm" ng-submit="addPlayer(newPlayer, newMan, newClu)">
-    Select Club:
+    Select Manager:
     <label>
         <select ng-model="newMan">
             <option ng-repeat="man in managers" value="{{man}}">{{man.managervmLastName}}</option>
         </select>
     </label>
 
-    Select Manager:
+    Select Club:
     <label>
         <select ng-model="newClu">
             <option ng-repeat="clu in clubs" value="{{clu}}">{{clu.clubvmName}}</option>
@@ -24,15 +24,15 @@
     <tr>
         <th><input name="nameInput" class="form-control" required type="text" placeholder="FirstName" ng-model="newPlayer.playerFirstName">
             <span class="error" ng-show="addPlayerForm.nameInput.$touched && !addPlayerForm.nameInput.$dirty">Enter FirstName!</span></th>
-        <th><input name="lastNameInput" class="form-control" required type="text" placeholder="Country" ng-model="newPlayer.playerLastName">
+        <th><input name="lastNameInput" class="form-control" required type="text" placeholder="LastNaMe" ng-model="newPlayer.playerLastName">
             <span class="error" ng-show="addPlayerForm.lastNameInput.$touched && !addPlayerForm.lastNameInput.$dirty">Enter LastName!</span></th>
-        <th><input name="nationalityInput" class="form-control" required type="text" placeholder="City" ng-model="newPlayer.playerNationality">
+        <th><input name="nationalityInput" class="form-control" required type="text" placeholder="Nationality" ng-model="newPlayer.playerNationality">
             <span class="error" ng-show="addPlayerForm.nationalityInput.$touched && !addPlayerForm.nationalityInput.$dirty">Enter Player Nationality!</span></th>
         <th><input name="birthYearInput" class="form-control" required type="number" placeholder="Year" ng-model="newPlayer.playerYearOfBirth">
             <span class="error" ng-show="addPlayerForm.nameInput.$touched && !addPlayerForm.nameInput.$dirty">Enter Year Of Birth!</span></th>
-        <th><input name="priceInput" class="form-control" required type="text" placeholder="FirstName" ng-model="newPlayer.playerPrice">
+        <th><input name="priceInput" class="form-control" required type="text" placeholder="Price" ng-model="newPlayer.playerPrice">
             <span class="error" ng-show="addPlayerForm.priceInput.$touched && !addPlayerForm.priceInput.$dirty">Enter Price!</span></th>
-        <th><input class="btn btn-success" type="submit" value="Add Competition"></th>
+        <th><input class="btn btn-success" type="submit" value="Add Player"></th>
     </tr>
 </table>
 </form>

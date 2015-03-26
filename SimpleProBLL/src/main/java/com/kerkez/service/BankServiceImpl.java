@@ -6,6 +6,7 @@ import com.kerkez.model.Player;
 import com.kerkez.repository.BankRepository;
 import com.kerkez.repository.ManagerRepository;
 import com.kerkez.viewModel.BankViewModel;
+import com.kerkez.viewModel.UpdateBankViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -38,7 +39,6 @@ public class BankServiceImpl implements BankService {
     public List<BankViewModel> load() {
         List<Bank> banks = bankRepository.findAll();
         List<BankViewModel> banksvm = new ArrayList<BankViewModel>();
-        //this is where i stop last time!!!! Convert this in view model and send back
         for(Bank b: banks){
             BankViewModel bvm = new BankViewModel(b);
             banksvm.add(bvm);
@@ -58,5 +58,17 @@ public class BankServiceImpl implements BankService {
             managerRepository.save(manager);
         }
         bankRepository.delete(d);
+    }
+
+    @Override
+    public Bank getOne(Long id) {
+        return bankRepository.findOne(id);
+    }
+
+    @Override
+    public void update(UpdateBankViewModel updateBankViewModel) {
+        Bank bank = bankRepository.findOne(updateBankViewModel.getUbvmId());
+        bank.setBankName(updateBankViewModel.getUbvmName());
+        bankRepository.save(bank);
     }
 }

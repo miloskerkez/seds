@@ -8,38 +8,31 @@ import java.io.Serializable;
  * Created by milos.kerkez on 3/3/2015.
  */
 @Entity
-@Table(name = "player")
 public class Player implements Serializable {
 
     @Id
     @GeneratedValue
-    @Column(name = "playerid")
     private Long playerId;
 
     @NotNull
-    @Column(name = "playerfirstname")
     private String playerFirstName;
 
     @NotNull
-    @Column(name = "playerlastname")
     private String playerLastName;
 
     @NotNull
-    @Column(name = "playeryearofbirth")
     private int playerYearOfBirth;
 
     @NotNull
-    @Column(name = "playernationality")
     private String playerNationality;
 
     @NotNull
-    @Column(name = "playerprice")
     private int playerPrice;
 
     @ManyToOne
     private Club playerClub;
 
-    @OneToOne(mappedBy = "contractPlayer", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "contractPlayer", fetch = FetchType.EAGER)
     private Contract playerContract;
 
     @ManyToOne

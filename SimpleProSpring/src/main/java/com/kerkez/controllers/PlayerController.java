@@ -33,4 +33,10 @@ public class PlayerController {
     public void doSomeThing(@RequestBody Player input) {
         playerService.save(input);
     }
+
+    @RequestMapping("delPlayer")
+    @ResponseBody
+    public void delPlayer(@RequestBody Long p) {
+        playerService.delete(p);
+    }
 }
