@@ -2,6 +2,7 @@ package com.kerkez.service;
 
 import com.kerkez.model.Club;
 import com.kerkez.viewModel.ClubViewModel;
+import com.kerkez.viewModel.UpdateClubViewModel;
 
 import java.util.List;
 
@@ -13,4 +14,8 @@ public interface ClubService {
     List<ClubViewModel> load();
 
     void delete(Long c);
+
+    Club getOne(Long id);
+
+    void update(UpdateClubViewModel updateClubViewModel);
 }

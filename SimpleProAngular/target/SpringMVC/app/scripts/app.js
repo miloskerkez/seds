@@ -91,6 +91,9 @@ angular
             }).when('/updBank', {
                 templateUrl: 'views/updateBank.html',
                 controller: 'BankCtrl'
+            }).when('/updClub', {
+                templateUrl: 'views/updateClub.html',
+                controller: 'ClubCtrl'
             })
 
             .otherwise('/first');

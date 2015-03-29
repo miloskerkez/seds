@@ -6,6 +6,7 @@ import com.kerkez.model.Player;
 import com.kerkez.repository.ClubRepository;
 import com.kerkez.repository.PlayerRepository;
 import com.kerkez.viewModel.ClubViewModel;
+import com.kerkez.viewModel.UpdateClubViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -61,5 +62,20 @@ public class ClubServiceImpl implements ClubService {
             playerRepository.save(player);
         }
         clubRepository.delete(club);
+    }
+
+    @Override
+    public Club getOne(Long id) {
+        return clubRepository.findOne(id);
+    }
+
+    @Override
+    public void update(UpdateClubViewModel updateClubViewModel) {
+        Club club = clubRepository.findOne(updateClubViewModel.getUcvmId());
+        club.setClubBirthYear(updateClubViewModel.getUcvmYear());
+        club.setClubCity(updateClubViewModel.getUcvmCity());
+        club.setClubCountry(updateClubViewModel.getUcvmCountry());
+        club.setClubName(updateClubViewModel.getUcvmName());
+        clubRepository.save(club);
     }
 }

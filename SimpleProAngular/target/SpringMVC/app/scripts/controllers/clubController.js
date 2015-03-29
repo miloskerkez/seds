@@ -11,6 +11,10 @@
         getClub();
         getCompetition();
         $scope.clubs = null;
+        $scope.getThisClub = getThisClub;
+        $scope.updateClub = updateClub;
+
+        $scope.clubToUpdate = $routeParams.param;
 
         function addClub(clubb) {
             Service.setDataCRUD(clubb, 'setClub').then(
@@ -48,6 +52,28 @@
                 function (data) {
                     $scope.clubToDelete = data;
                     $route.reload();
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getThisClub(id) {
+            Service.setDataCRUD(id, 'getClubWithId').then(
+                function (data) {
+                    $scope.clubToUpd = data;
+                    $location.path('updClub').search({param: $scope.clubToUpd})
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function updateClub(c) {
+            Service.setDataCRUD(c, 'updClub').then(
+                function (data) {
+                    $scope.clubToUpde = data;
+                    $location.path('getClubs');
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

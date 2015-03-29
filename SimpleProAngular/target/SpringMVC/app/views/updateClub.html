@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="updFormClub" ng-submit="updateClub(clubToUpdate)">
+    <table class="table">
+        <tr>
+            <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="clubToUpdate.ucvmName">
+                <span class="error" ng-show="updFormClub.nameInput.$touched && !updFormClub.nameInput.$dirty">Enter Name!</span></th>
+            <th><input name="yearInput" class="form-control" required type="number" placeholder="Name" ng-model="clubToUpdate.ucvmYear">
+                <span class="error" ng-show="updFormClub.yearInput.$touched && !updFormClub.yearInput.$dirty">Enter Year!</span></th>
+            <th><input name="cityInput" class="form-control" required type="text" placeholder="Name" ng-model="clubToUpdate.ucvmCity">
+                <span class="error" ng-show="updFormClub.cityInput.$touched && !updFormClub.cityInput.$dirty">Enter City!</span></th>
+            <th><input name="countryInput" class="form-control" required type="text" placeholder="Name" ng-model="clubToUpdate.ucvmCountry">
+                <span class="error" ng-show="updFormClub.countryInput.$touched && !updFormClub.countryInput.$dirty">Enter Country!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Update Club"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

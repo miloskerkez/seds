@@ -3,6 +3,8 @@ package com.kerkez.controllers;
 import com.kerkez.model.Club;
 import com.kerkez.service.ClubService;
 import com.kerkez.viewModel.ClubViewModel;
+import com.kerkez.viewModel.UpdateBankViewModel;
+import com.kerkez.viewModel.UpdateClubViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -37,5 +39,25 @@ public class ClubController {
     @ResponseBody
     public void delDog(@RequestBody Long c) {
         clubService.delete(c);
+    }
+
+    @RequestMapping("getClubWithId")
+    @ResponseBody
+    public UpdateClubViewModel getThisClub(@RequestBody Long id) {
+        Club club = clubService.getOne(id);
+        UpdateClubViewModel updateClubViewModel = new UpdateClubViewModel();
+        updateClubViewModel.setUcvmCity(club.getClubCity());
+        updateClubViewModel.setUcvmCountry(club.getClubCountry());
+        updateClubViewModel.setUcvmName(club.getClubName());
+        updateClubViewModel.setUcvmYear(club.getClubBirthYear());
+        updateClubViewModel.setUcvmId(club.getClubId());
+        return updateClubViewModel;
+    }
+
+    @RequestMapping("updClub")
+    @ResponseBody
+    public void updClubb(@RequestBody UpdateClubViewModel updateClubViewModel) {
+        clubService.update(updateClubViewModel);
+
     }
 }
