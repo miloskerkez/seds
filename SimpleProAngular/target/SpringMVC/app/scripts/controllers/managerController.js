@@ -10,9 +10,12 @@
         getManagers();
 
         $scope.addManager = addManager;
-        //$scope.allbanks = null;
         $scope.managers = null;
         $scope.deleteManger = deleteManger;
+        $scope.getThisManager = getThisManager;
+        $scope.updateManager = updateManager;
+
+        $scope.managerToUpdate = $routeParams.param;
 
 
         function getBanks() {
@@ -65,6 +68,29 @@
                     $scope.noMessage = "error!!!!" + error;
                 });
         }
+
+        function getThisManager(id) {
+            Service.setDataCRUD(id, 'getManagerWithId').then(
+                function (data) {
+                    $scope.managerToUpd = data;
+                    $location.path('updManager').search({param: $scope.managerToUpd})
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function updateManager(m) {
+            Service.setDataCRUD(m, 'updManager').then(
+                function (data) {
+                    $scope.managerToUpde = data;
+                    $location.path('getManagers');
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
 
 
     }

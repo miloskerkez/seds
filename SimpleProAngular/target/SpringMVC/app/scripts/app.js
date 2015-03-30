@@ -94,6 +94,12 @@ angular
             }).when('/updClub', {
                 templateUrl: 'views/updateClub.html',
                 controller: 'ClubCtrl'
+            }).when('/updCompetition', {
+                templateUrl: 'views/updateCompetition.html',
+                controller: 'CompetitionCtrl'
+            }).when('/updManager', {
+                templateUrl: 'views/updateManager.html',
+                controller: 'ManagerCtrl'
             })
 
             .otherwise('/first');

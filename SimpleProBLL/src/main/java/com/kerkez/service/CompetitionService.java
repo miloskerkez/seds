@@ -2,6 +2,7 @@ package com.kerkez.service;
 
 import com.kerkez.model.Competition;
 import com.kerkez.viewModel.CompetitionViewModel;
+import com.kerkez.viewModel.UpdateCompetitionViewModel;
 
 import java.util.List;
 
@@ -13,4 +14,8 @@ public interface CompetitionService {
     List<CompetitionViewModel> load();
 
     void delete(Long c);
+
+    Competition getOne(Long id);
+
+    void update(UpdateCompetitionViewModel updateCompetitionViewModel);
 }

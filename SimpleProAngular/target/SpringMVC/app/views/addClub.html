@@ -11,12 +11,12 @@
         <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="newClub.clubName">
             <span class="error" ng-show="addClubForm.nameInput.$touched && !addClubForm.nameInput.$dirty">Enter Name!</span></th>
         <th><input name="countryInput" class="form-control" required type="text" placeholder="Country" ng-model="newClub.clubCountry">
-            <span class="error" ng-show="addClubForm.nameInput.$touched && !addClubForm.nameInput.$dirty">Enter Country!</span></th>
+            <span class="error" ng-show="addClubForm.countryInput.$touched && !addClubForm.countryInput.$dirty">Enter Country!</span></th>
         <th><input name="cityInput" class="form-control" required type="text" placeholder="City" ng-model="newClub.clubCity">
-            <span class="error" ng-show="addClubForm.nameInput.$touched && !addClubForm.nameInput.$dirty">Enter City!</span></th>
+            <span class="error" ng-show="addClubForm.cityInput.$touched && !addClubForm.cityInput.$dirty">Enter City!</span></th>
         <th><input name="birthYearInput" class="form-control" required type="number" placeholder="Year" ng-model="newClub.clubBirthYear">
-            <span class="error" ng-show="addClubForm.nameInput.$touched && !addClubForm.nameInput.$dirty">Enter Year!</span></th>
-        <th><input class="btn btn-success" type="submit" value="Add Competition"></th>
+            <span class="error" ng-show="addClubForm.birthYearInput.$touched && !addClubForm.birthYearInput.$dirty">Enter Year!</span></th>
+        <th><input class="btn btn-success" type="submit" value="Add Club"></th>
     </tr>
 </table>
 </form>

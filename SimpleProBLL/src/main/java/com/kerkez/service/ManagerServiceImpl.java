@@ -6,6 +6,7 @@ import com.kerkez.model.Player;
 import com.kerkez.repository.ManagerRepository;
 import com.kerkez.repository.PlayerRepository;
 import com.kerkez.viewModel.ManagerViewModel;
+import com.kerkez.viewModel.UpdateManagerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -54,5 +55,20 @@ public class ManagerServiceImpl implements ManagerService {
         }
         //manager.getManagerPlayers().removeAll(playerList);
         managerRepository.delete(manager);
+    }
+
+    @Override
+    public Manager getOne(Long id) {
+        return managerRepository.findOne(id);
+    }
+
+    @Override
+    public void update(UpdateManagerViewModel updateManagerViewModel) {
+        Manager manager = managerRepository.findOne(updateManagerViewModel.getUmvmId());
+        manager.setManagerFirstName(updateManagerViewModel.getUmvmFirstName());
+        manager.setManagerLastName(updateManagerViewModel.getUmvmLastName());
+        manager.setManagerMoney(updateManagerViewModel.getUmvmMoney());
+        manager.setManagerNationality(updateManagerViewModel.getUmvmNationality());
+        managerRepository.save(manager);
     }
 }

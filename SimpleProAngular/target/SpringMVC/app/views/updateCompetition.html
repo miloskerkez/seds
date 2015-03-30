@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="updFormCompetition" ng-submit="updateCompetition(competitionToUpdate)">
+    <table class="table">
+        <tr>
+            <th><input name="nameInput" class="form-control" required type="text" placeholder="Name" ng-model="competitionToUpdate.ucvmName">
+                <span class="error" ng-show="updFormCompetition.nameInput.$touched && !updFormCompetition.nameInput.$dirty">Enter Name!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Update Competition"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

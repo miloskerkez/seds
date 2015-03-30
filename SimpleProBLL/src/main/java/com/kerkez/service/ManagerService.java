@@ -2,6 +2,7 @@ package com.kerkez.service;
 
 import com.kerkez.model.Manager;
 import com.kerkez.viewModel.ManagerViewModel;
+import com.kerkez.viewModel.UpdateManagerViewModel;
 
 import java.util.List;
 
@@ -14,4 +15,8 @@ public interface ManagerService {
     List<ManagerViewModel> load();
 
     void delete(Long m);
+
+    Manager getOne(Long id);
+
+    void update(UpdateManagerViewModel updateManagerViewModel);
 }

@@ -5,6 +5,7 @@ import com.kerkez.model.Competition;
 import com.kerkez.repository.ClubRepository;
 import com.kerkez.repository.CompetitionRepository;
 import com.kerkez.viewModel.CompetitionViewModel;
+import com.kerkez.viewModel.UpdateCompetitionViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -47,5 +48,17 @@ public class CompetitionServiceImpl implements CompetitionService {
     public void delete(Long c) {
         Competition competition = competitionRepository.findOne(c);
         competitionRepository.delete(c);
+    }
+
+    @Override
+    public Competition getOne(Long id) {
+        return competitionRepository.findOne(id);
+    }
+
+    @Override
+    public void update(UpdateCompetitionViewModel updateCompetitionViewModel) {
+        Competition competition = competitionRepository.findOne(updateCompetitionViewModel.getUcvmId());
+        competition.setCompetitionName(updateCompetitionViewModel.getUcvmName());
+        competitionRepository.save(competition);
     }
 }
