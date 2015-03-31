@@ -2,6 +2,7 @@ package com.kerkez.service;
 
 import com.kerkez.model.Player;
 import com.kerkez.viewModel.PlayerViewModel;
+import com.kerkez.viewModel.UpdatePlayerViewModel;
 
 import java.util.List;
 
@@ -15,4 +16,8 @@ public interface PlayerService {
     Player save(Player player);
 
     void delete(Long p);
+
+    Player getOne(Long id);
+
+    void update(UpdatePlayerViewModel updatePlayerViewModel);
 }

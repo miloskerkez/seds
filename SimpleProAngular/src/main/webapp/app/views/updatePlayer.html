@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="updFormPlayer" ng-submit="updatePlayer(playerToUpdate)">
+    <table class="table">
+        <tr>
+            <th><input name="firstNameInput" class="form-control" required type="text" placeholder="FirstName" ng-model="playerToUpdate.upvmFirstName">
+                <span class="error" ng-show="updFormPlayer.firstNameInput.$touched && !updFormPlayer.firstNameInput.$dirty">Enter FirstName!</span></th>
+            <th><input name="lastNameInput" class="form-control" required type="text" placeholder="LastName" ng-model="playerToUpdate.upvmLastName">
+                <span class="error" ng-show="updFormPlayer.lastNameInput.$touched && !updFormPlayer.lastNameInput.$dirty">Enter LastName!</span></th>
+            <th><input name="priceInput" class="form-control" required type="number" placeholder="Money" ng-model="playerToUpdate.upvmPrice">
+                <span class="error" ng-show="updFormPlayer.priceInput.$touched && !updFormPlayer.priceInput.$dirty">Enter Money!</span></th>
+            <th><input name="nationalityInput" class="form-control" required type="text" placeholder="Nationality" ng-model="playerToUpdate.upvmNationality">
+                <span class="error" ng-show="updFormPlayer.nationalityInput.$touched && !updFormPlayer.nationalityInput.$dirty">Enter Nationality!</span></th>
+            <th><input name="YearInput" class="form-control" required type="number" placeholder="Birth Year" ng-model="playerToUpdate.upvmYear">
+                <span class="error" ng-show="updFormPlayer.YearInput.$touched && !updFormPlayer.YearInput.$dirty">Enter Year!</span></th>
+            <th><input class="btn btn-success" type="submit" value="Update Manager"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

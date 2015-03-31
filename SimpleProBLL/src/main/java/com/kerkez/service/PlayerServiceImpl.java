@@ -4,6 +4,7 @@ import com.kerkez.model.Player;
 import com.kerkez.repository.ContractRepository;
 import com.kerkez.repository.PlayerRepository;
 import com.kerkez.viewModel.PlayerViewModel;
+import com.kerkez.viewModel.UpdatePlayerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -45,5 +46,21 @@ public class PlayerServiceImpl implements PlayerService {
         Player player = playerRepository.findOne(p);
         contractRepository.delete(player.getPlayerContract());
         playerRepository.delete(p);
+    }
+
+    @Override
+    public Player getOne(Long id) {
+        return playerRepository.findOne(id);
+    }
+
+    @Override
+    public void update(UpdatePlayerViewModel updatePlayerViewModel) {
+        Player player = playerRepository.findOne(updatePlayerViewModel.getUpvmId());
+        player.setPlayerFirstName(updatePlayerViewModel.getUpvmFirstName());
+        player.setPlayerLastName(updatePlayerViewModel.getUpvmLastName());
+        player.setPlayerNationality(updatePlayerViewModel.getUpvmNationality());
+        player.setPlayerPrice(updatePlayerViewModel.getUpvmPrice());
+        player.setPlayerYearOfBirth(updatePlayerViewModel.getUpvmYear());
+        playerRepository.save(player);
     }
 }

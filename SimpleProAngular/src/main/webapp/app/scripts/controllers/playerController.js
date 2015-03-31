@@ -12,8 +12,10 @@
 
         $scope.addPlayer = addPlayer;
         $scope.deletePlayer = deletePlayer;
+        $scope.getThisPlayer = getThisPlayer;
+        $scope.updatePlayer = updatePlayer;
 
-
+        $scope.playerToUpdate = $routeParams.param;
 
 
         function addPlayer(p, m, c) {
@@ -74,6 +76,28 @@
                 function (data) {
                     $scope.playerToDelete = data;
                     $route.reload();
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getThisPlayer(id) {
+            Service.setDataCRUD(id, 'getPlayerWithId').then(
+                function (data) {
+                    $scope.playerToUpd = data;
+                    $location.path('updPlayer').search({param: $scope.playerToUpd})
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function updatePlayer(p) {
+            Service.setDataCRUD(p, 'updPlayer').then(
+                function (data) {
+                    $scope.playerToUpde = data;
+                    $location.path('getPlayers');
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

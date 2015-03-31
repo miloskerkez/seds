@@ -100,6 +100,9 @@ angular
             }).when('/updManager', {
                 templateUrl: 'views/updateManager.html',
                 controller: 'ManagerCtrl'
+            }).when('/updPlayer', {
+                templateUrl: 'views/updatePlayer.html',
+                controller: 'PlayerCtrl'
             })
 
             .otherwise('/first');
