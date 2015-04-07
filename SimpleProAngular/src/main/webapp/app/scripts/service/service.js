@@ -13,7 +13,8 @@
             getFromServer: getFromServer,
             getDogs: getDogs,
             setDataCRUD: setDataCRUD,
-            getAllData: getAllData
+            getAllData: getAllData,
+            buyPlayerService: buyPlayerService
         };
         return service;
 
@@ -63,6 +64,27 @@
                 method: 'POST',
                 url: url,
                 data: JSON.stringify(requestObject),
+                headers: {'Content-Type': 'application/json'}
+            })
+                .success(function (data) {
+                    deferred.resolve(data);
+                })
+                .error(function () {
+                    deferred.reject("Request error.");
+                });
+            return deferred.promise;
+        }
+
+        function buyPlayerService(requestObject1, requestObject2, urlPath) {
+            var deferred = $q.defer();
+            var url = baseUrl + urlPath;
+            $http({
+                method: 'POST',
+                url: url,
+                data: {
+                    pid: JSON.stringify(requestObject1),
+                    mid: JSON.stringify(requestObject2)
+                },
                 headers: {'Content-Type': 'application/json'}
             })
                 .success(function (data) {

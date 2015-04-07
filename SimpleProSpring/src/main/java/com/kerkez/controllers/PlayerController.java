@@ -1,7 +1,10 @@
 package com.kerkez.controllers;
 
+import com.kerkez.model.Manager;
 import com.kerkez.model.Player;
+import com.kerkez.service.ManagerService;
 import com.kerkez.service.PlayerService;
+import com.kerkez.viewModel.BuyViewModel;
 import com.kerkez.viewModel.PlayerViewModel;
 import com.kerkez.viewModel.UpdatePlayerViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +23,9 @@ public class PlayerController {
 
     @Autowired
     private PlayerService playerService;
+
+    @Autowired
+    private ManagerService managerService;
 
     @RequestMapping(value = "getViewPlayer", method = RequestMethod.GET, produces = "application/json")
     public
@@ -59,6 +65,16 @@ public class PlayerController {
     @ResponseBody
     public void updPlayerr(@RequestBody UpdatePlayerViewModel updatePlayerViewModel) {
         playerService.update(updatePlayerViewModel);
+
+    }
+
+    @RequestMapping("ExchangePlayer")
+    @ResponseBody
+    public void buyPlayer(@RequestBody BuyViewModel buyViewModel) {
+        Player player = playerService.getOne(buyViewModel.getPid());
+        Manager manager = managerService.getOne(buyViewModel.getMid());
+        player.setPlayerManager(manager);
+        playerService.save(player);
 
     }
 }

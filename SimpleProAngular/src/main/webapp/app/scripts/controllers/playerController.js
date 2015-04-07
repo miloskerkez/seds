@@ -14,8 +14,12 @@
         $scope.deletePlayer = deletePlayer;
         $scope.getThisPlayer = getThisPlayer;
         $scope.updatePlayer = updatePlayer;
+        $scope.buyPlayer = buyPlayer;
 
         $scope.playerToUpdate = $routeParams.param;
+        $scope.managerPlayers = $routeParams.param2;
+        $scope.allPlayerss = $routeParams.param3;
+        $scope.managerToBuy = $routeParams.param4;
 
 
         function addPlayer(p, m, c) {
@@ -98,6 +102,17 @@
                 function (data) {
                     $scope.playerToUpde = data;
                     $location.path('getPlayers');
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function buyPlayer(p,m){
+            Service.buyPlayerService(p, m, 'ExchangePlayer').then(
+                function (data) {
+                    $scope.playerToUpd = data;
+                    $location.path('getPlayers')
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

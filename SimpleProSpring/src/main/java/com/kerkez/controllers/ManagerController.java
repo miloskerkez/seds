@@ -60,4 +60,12 @@ public class ManagerController {
         managerService.update(updateManagerViewModel);
 
     }
+
+    @RequestMapping("getManagersPlayers")
+    @ResponseBody
+    public ManagerViewModel getThisManagerPlayers(@RequestBody Long id) {
+        Manager manager = managerService.getOne(id);
+        ManagerViewModel mvm = new ManagerViewModel(manager);
+        return mvm;
+    }
 }

@@ -1,6 +1,10 @@
 package com.kerkez.viewModel;
 
 import com.kerkez.model.Manager;
+import com.kerkez.model.Player;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by milos.kerkez on 3/17/2015.
@@ -19,6 +23,8 @@ public class ManagerViewModel {
 
     private String managervmBankName;
 
+    private List<PlayerViewModel> managervmPlayers;
+
     public ManagerViewModel(Manager manager){
         this.managervmId = manager.getManagerId();
         this.managervmLastName = manager.getManagerLastName();
@@ -26,6 +32,10 @@ public class ManagerViewModel {
         this.managervmMoney = manager.getManagerMoney();
         this.managervmNationality = manager.getManagerNationality();
         this.managervmBankName = manager.getManagerBank().getBankName();
+        this.managervmPlayers = new ArrayList<PlayerViewModel>();
+        for(Player p: manager.getManagerPlayers()){
+            managervmPlayers.add(new PlayerViewModel(p));
+        }
     }
 
     public Long getManagervmId() {
@@ -74,5 +84,13 @@ public class ManagerViewModel {
 
     public void setManagervmBankName(String managervmBankName) {
         this.managervmBankName = managervmBankName;
+    }
+
+    public List<PlayerViewModel> getManagervmPlayers() {
+        return managervmPlayers;
+    }
+
+    public void setManagervmPlayers(List<PlayerViewModel> managervmPlayers) {
+        this.managervmPlayers = managervmPlayers;
     }
 }

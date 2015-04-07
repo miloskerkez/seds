@@ -103,6 +103,12 @@ angular
             }).when('/updPlayer', {
                 templateUrl: 'views/updatePlayer.html',
                 controller: 'PlayerCtrl'
+            }).when('/getManPlayers', {
+                templateUrl: 'views/managerPlayers.html',
+                controller: 'PlayerCtrl'
+            }).when('/getAllPlayers', {
+                templateUrl: 'views/getAllPlayers.html',
+                controller: 'PlayerCtrl'
             })
 
             .otherwise('/first');

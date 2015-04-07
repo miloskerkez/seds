@@ -14,8 +14,11 @@
         $scope.deleteManger = deleteManger;
         $scope.getThisManager = getThisManager;
         $scope.updateManager = updateManager;
+        $scope.getManagersPlayer = getManagersPlayer;
+        $scope.getAllPlayers = getAllPlayers;
 
         $scope.managerToUpdate = $routeParams.param;
+
 
 
         function getBanks() {
@@ -85,6 +88,28 @@
                 function (data) {
                     $scope.managerToUpde = data;
                     $location.path('getManagers');
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getManagersPlayer(m){
+            Service.setDataCRUD(m, 'getManagersPlayers').then(
+                function (data) {
+                    $scope.managersPlayers = data;
+                    $location.path('getManPlayers').search({param2: $scope.managersPlayers.managervmPlayers})
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function getAllPlayers(m){
+            Service.getAllData('getViewPlayer').then(
+                function (data) {
+                    $scope.allPlayers = data;
+                    $location.path('getAllPlayers').search({param3: $scope.allPlayers, param4: m});
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
