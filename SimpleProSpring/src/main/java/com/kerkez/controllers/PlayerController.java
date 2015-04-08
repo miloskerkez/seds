@@ -5,8 +5,10 @@ import com.kerkez.model.Player;
 import com.kerkez.service.ManagerService;
 import com.kerkez.service.PlayerService;
 import com.kerkez.viewModel.BuyViewModel;
+import com.kerkez.viewModel.MessageViewModel;
 import com.kerkez.viewModel.PlayerViewModel;
 import com.kerkez.viewModel.UpdatePlayerViewModel;
+import jdk.nashorn.internal.objects.NativeJSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -70,11 +72,20 @@ public class PlayerController {
 
     @RequestMapping("ExchangePlayer")
     @ResponseBody
-    public void buyPlayer(@RequestBody BuyViewModel buyViewModel) {
+    public MessageViewModel buyPlayer(@RequestBody BuyViewModel buyViewModel) {
+        MessageViewModel mvm = new MessageViewModel();
         Player player = playerService.getOne(buyViewModel.getPid());
         Manager manager = managerService.getOne(buyViewModel.getMid());
-        player.setPlayerManager(manager);
-        playerService.save(player);
+        if(player.getPlayerManager().getManagerId() == manager.getManagerId()){
+            mvm.setMessageBuy("Igrac je vec u vlasnistvu menadzera");
+        }else if(manager.getManagerMoney() < player.getPlayerPrice()){
+            mvm.setMessageBuy("Nemate dovoljno para da kupite ovog igraca");
+        }else{
+            player.setPlayerManager(manager);
+            playerService.save(player);
+            mvm.setMessageBuy("Uspesno ste kupili igraca");
+        }
+       return mvm;
 
     }
 }

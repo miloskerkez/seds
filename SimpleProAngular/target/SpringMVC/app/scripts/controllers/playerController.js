@@ -2,9 +2,9 @@
 
     angular.module('thisApp').controller('PlayerCtrl', PlayerCtrl);
 
-    PlayerCtrl.$inject = ['$scope', '$location', '$routeParams', 'Service', '$route'];
+    PlayerCtrl.$inject = ['$scope', '$location', '$routeParams', 'Service', '$route', 'toaster'];
 
-    function PlayerCtrl($scope, $location, $routeParams, Service, $route) {
+    function PlayerCtrl($scope, $location, $routeParams, Service, $route, toaster) {
 
         getManagers();
         getPlayers();
@@ -111,8 +111,9 @@
         function buyPlayer(p,m){
             Service.buyPlayerService(p, m, 'ExchangePlayer').then(
                 function (data) {
-                    $scope.playerToUpd = data;
-                    $location.path('getPlayers')
+                    $scope.messageFromBuy = data;
+                    toaster.pop('info', "Message", $scope.messageFromBuy.messageBuy);
+                    //$location.path('getPlayers');
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
