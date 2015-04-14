@@ -11,6 +11,7 @@
         <td>{{co.competitionvmId}}</td>
         <td>{{co.competitionvmName}}</td>
         <td>{{co.competitionvmType}}</td>
+        <td><button class="btn btn-primary" type="submit" ng-click="competitionsClubs(co.competitionvmId)">Clubs</button></td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteCompetition(co.competitionvmId)">Delete</button></td>
         <td><button class="btn btn-primary" type="submit" ng-click="getThisCompetition(co.competitionvmId)">Update</button></td>
     </tr>

@@ -23,38 +23,6 @@ angular
             .when('/first', {
                 templateUrl: 'views/first.html',
                 controller: 'FirstCtrl'
-            })
-            .when('/second', {
-                templateUrl: 'views/second.html',
-                controller: 'SecondCtrl'
-            })
-            .when('/json', {
-                templateUrl: 'views/json.html',
-                controller: 'JsonCtrl'
-            })
-            .when('/dog', {
-                templateUrl: 'views/dogs.html',
-                controller: 'DogCtrl'
-            })
-            .when('/person', {
-                templateUrl: 'views/displayPerson.html',
-                controller: 'PersonCtrl'
-            })
-            .when('/addPerson', {
-                templateUrl: 'views/createPerson.html',
-                controller: 'PersonCtrl'
-            })
-            .when('/addDog', {
-                templateUrl: 'views/addDog.html',
-                controller: 'DogCtrl'
-            })
-            .when('/updPerson', {
-                templateUrl: 'views/updatePerson.html',
-                controller: 'PersonCtrl'
-            })
-            .when('/updDog', {
-                templateUrl: 'views/updateDog.html',
-                controller: 'DogCtrl'
             }).when("/bank", {
                 templateUrl: 'views/addBank.html',
                 controller: 'BankCtrl'
@@ -109,6 +77,12 @@ angular
             }).when('/getAllPlayers', {
                 templateUrl: 'views/getAllPlayers.html',
                 controller: 'PlayerCtrl'
+            }).when('/getCompetitionsClubs', {
+                templateUrl:'views/allCompetitionsClubs.html',
+                controller: 'CompetitionCtrl'
+            }).when('/clubToCompetition', {
+                templateUrl:'views/AddClubToCompetition.html',
+                controller: 'ClubCtrl'
             })
 
             .otherwise('/first');

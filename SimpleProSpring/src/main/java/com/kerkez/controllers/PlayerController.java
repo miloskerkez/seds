@@ -81,8 +81,14 @@ public class PlayerController {
         }else if(manager.getManagerMoney() < player.getPlayerPrice()){
             mvm.setMessageBuy("Nemate dovoljno para da kupite ovog igraca");
         }else{
+            Manager manager1 = player.getPlayerManager();
+            manager1.setManagerMoney(manager1.getManagerMoney()+player.getPlayerPrice());
+            managerService.save(manager1);
+            manager.setManagerMoney(manager.getManagerMoney()-player.getPlayerPrice());
+            managerService.save(manager);
             player.setPlayerManager(manager);
             playerService.save(player);
+
             mvm.setMessageBuy("Uspesno ste kupili igraca");
         }
        return mvm;

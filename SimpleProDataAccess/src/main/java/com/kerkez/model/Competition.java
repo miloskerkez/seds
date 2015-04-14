@@ -3,6 +3,7 @@ package com.kerkez.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -21,8 +22,9 @@ public class Competition {
     @NotNull
     private String competitionType;
 
-    @ManyToMany(mappedBy = "clubCompetition", fetch = FetchType.EAGER)
-    private List<Club> competitionClubs = new ArrayList<Club>();
+    @ManyToMany(mappedBy = "competitions", fetch = FetchType.EAGER)
+    private Collection<Club> clubs;
+    //private List<Club> competitionClubs = new ArrayList<Club>();
 
     public Long getCompetitionId() {
         return competitionId;
@@ -48,11 +50,19 @@ public class Competition {
         this.competitionType = competitionType;
     }
 
-    public List<Club> getCompetitionClubs() {
+   /* public List<Club> getCompetitionClubs() {
         return competitionClubs;
     }
 
     public void setCompetitionClubs(List<Club> competitionClubs) {
         this.competitionClubs = competitionClubs;
+    }*/
+
+    public Collection<Club> getClubs() {
+        return clubs;
+    }
+
+    public void setClubs(Collection<Club> clubs) {
+        this.clubs = clubs;
     }
 }

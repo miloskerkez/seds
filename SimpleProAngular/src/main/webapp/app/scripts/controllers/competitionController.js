@@ -12,8 +12,10 @@
         $scope.deleteCompetition = deleteCompetition;
         $scope.getThisCompetition = getThisCompetition;
         $scope.updateCompetition = updateCompetition;
+        $scope.competitionsClubs = competitionsClubs;
 
         $scope.competitionToUpdate = $routeParams.param;
+        $scope.compClubs = $routeParams.param5;
 
         function addCompetition(obj) {
             Service.setDataCRUD(obj, 'setCompetition').then(
@@ -31,6 +33,7 @@
             Service.getAllData('getViewCompetitions').then(
                 function (data) {
                     $scope.competitions = data;
+                    console.log(data)
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
@@ -64,6 +67,17 @@
                 function (data) {
                     $scope.competitionToUpde = data;
                     $location.path('getCompetitions');
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function competitionsClubs(cid){
+            Service.setDataCRUD(cid, 'getCompetitionsClubs').then(
+                function (data) {
+                    $scope.competitionClubs = data;
+                    $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs});
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

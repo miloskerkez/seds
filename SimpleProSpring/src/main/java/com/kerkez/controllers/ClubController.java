@@ -1,7 +1,10 @@
 package com.kerkez.controllers;
 
 import com.kerkez.model.Club;
+import com.kerkez.model.Competition;
 import com.kerkez.service.ClubService;
+import com.kerkez.service.CompetitionService;
+import com.kerkez.viewModel.ClubCompetitionViewModel;
 import com.kerkez.viewModel.ClubViewModel;
 import com.kerkez.viewModel.UpdateBankViewModel;
 import com.kerkez.viewModel.UpdateClubViewModel;
@@ -20,6 +23,9 @@ public class ClubController {
 
     @Autowired
     private ClubService clubService;
+
+    @Autowired
+    private CompetitionService competitionService;
 
     @RequestMapping("setClub")
     @ResponseBody
@@ -59,5 +65,14 @@ public class ClubController {
     public void updClubb(@RequestBody UpdateClubViewModel updateClubViewModel) {
         clubService.update(updateClubViewModel);
 
+    }
+
+    @RequestMapping("addClubToCompetition")
+    @ResponseBody
+    public void addClubToCompetition(@RequestBody ClubCompetitionViewModel clubCompetitionViewModel) {
+        Competition competition = competitionService.getOne(clubCompetitionViewModel.getCoid());
+        Club club = clubService.getOne(clubCompetitionViewModel.getClid());
+        competition.getClubs().add(club);
+        competitionService.save(competition);
     }
 }

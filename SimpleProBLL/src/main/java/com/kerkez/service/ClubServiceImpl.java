@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
@@ -50,10 +51,14 @@ public class ClubServiceImpl implements ClubService {
     @Override
     public void delete(Long c) {
         Club club = clubRepository.findOne(c);
-        List<Competition> competitionList = club.getClubCompetition();
+        /*List<Competition> competitionList = club.getClubCompetition();
        for (Competition comp: competitionList){
            comp.getCompetitionClubs().remove(club);
-       }
+       }*/
+        Collection<Competition> competitionList = club.getCompetitions();
+        for (Competition comp: competitionList){
+            comp.getClubs().remove(club);
+        }
         List<Player> playerList = club.getClubPlayers();
         for(Player p: playerList){
             Player player = playerRepository.findOne(p.getPlayerId());

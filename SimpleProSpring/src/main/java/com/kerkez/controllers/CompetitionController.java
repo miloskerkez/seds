@@ -1,13 +1,16 @@
 package com.kerkez.controllers;
 
+import com.kerkez.model.Club;
 import com.kerkez.model.Competition;
 import com.kerkez.service.CompetitionService;
+import com.kerkez.viewModel.ClubViewModel;
 import com.kerkez.viewModel.CompetitionViewModel;
 import com.kerkez.viewModel.UpdateCompetitionViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,5 +58,16 @@ public class CompetitionController {
     public void updClubb(@RequestBody UpdateCompetitionViewModel updateCompetitionViewModel) {
         competitionService.update(updateCompetitionViewModel);
 
+    }
+
+    @RequestMapping("getCompetitionsClubs")
+    @ResponseBody
+    public List<ClubViewModel> getCompetitionsClubs(@RequestBody Long id) {
+        Competition competition = competitionService.getOne(id);
+        List<ClubViewModel> clubViewModelsList = new ArrayList<ClubViewModel>();
+        for(Club club: competition.getClubs()){
+            clubViewModelsList.add(new ClubViewModel(club));
+        }
+        return clubViewModelsList;
     }
 }

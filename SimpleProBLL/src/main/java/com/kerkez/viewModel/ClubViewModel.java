@@ -32,8 +32,13 @@ public class ClubViewModel {
         this.clubvmCountry = club.getClubCountry();
         this.clubvmCity = club.getClubCity();
         clubvmCompetition = new ArrayList<CompetitionViewModel>();
-        if (club.getClubCompetition() != null) {
+        /*if (club.getClubCompetition().size() > 0) {
             for (Competition c : club.getClubCompetition()) {
+                clubvmCompetition.add(new CompetitionViewModel(c));
+            }
+        }*/
+        if (club.getCompetitions().size() > 0) {
+            for (Competition c : club.getCompetitions()) {
                 clubvmCompetition.add(new CompetitionViewModel(c));
             }
         }

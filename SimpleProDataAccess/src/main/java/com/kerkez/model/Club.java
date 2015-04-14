@@ -3,6 +3,7 @@ package com.kerkez.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -32,9 +33,10 @@ public class Club {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "club_competition",
-            joinColumns = {@JoinColumn(name = "cluid", nullable = false, updatable = false)},
-            inverseJoinColumns = {@JoinColumn(name = "comid", nullable = false, updatable = false)})
-    private List<Competition> clubCompetition = new ArrayList<Competition>();
+            joinColumns = @JoinColumn(name = "cluid"),
+            inverseJoinColumns = @JoinColumn(name = "comid"))
+    private Collection<Competition> competitions;
+    //private List<Competition> clubCompetition = new ArrayList<Competition>();
 
     public Long getClubId() {
         return clubId;
@@ -84,11 +86,19 @@ public class Club {
         this.clubPlayers = clubPlayers;
     }
 
-    public List<Competition> getClubCompetition() {
+    /*public List<Competition> getClubCompetition() {
         return clubCompetition;
     }
 
     public void setClubCompetition(List<Competition> clubCompetition) {
         this.clubCompetition = clubCompetition;
+    }*/
+
+    public Collection<Competition> getCompetitions() {
+        return competitions;
+    }
+
+    public void setCompetitions(Collection<Competition> competitions) {
+        this.competitions = competitions;
     }
 }

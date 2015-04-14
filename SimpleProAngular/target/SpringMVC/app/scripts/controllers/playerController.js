@@ -113,6 +113,7 @@
                 function (data) {
                     $scope.messageFromBuy = data;
                     toaster.pop('info', "Message", $scope.messageFromBuy.messageBuy);
+                    console.log($scope.messageFromBuy);
                     //$location.path('getPlayers');
                 },
                 function (error) {

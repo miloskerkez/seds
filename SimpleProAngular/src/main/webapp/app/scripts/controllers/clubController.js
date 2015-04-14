@@ -13,6 +13,7 @@
         $scope.clubs = null;
         $scope.getThisClub = getThisClub;
         $scope.updateClub = updateClub;
+        $scope.addClubToCompetition = addClubToCompetition;
 
         $scope.clubToUpdate = $routeParams.param;
 
@@ -31,6 +32,7 @@
             Service.getAllData('getViewClub').then(
                 function (data) {
                     $scope.clubs = data;
+                    console.log(data)
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
@@ -74,6 +76,21 @@
                 function (data) {
                     $scope.clubToUpde = data;
                     $location.path('getClubs');
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function addClubToCompetition(coid,clid){
+            $scope.ovo = {
+                coid: coid,
+                clid: clid
+            };
+            Service.setDataCRUD($scope.ovo, 'addClubToCompetition').then(
+                function (data) {
+                    $scope.clubComp = data;
+                    $location.path('first');
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
