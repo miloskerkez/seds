@@ -25,6 +25,8 @@ public class ClubViewModel {
 
     private List<CompetitionViewModel> clubvmCompetition;
 
+    private Long competitionId;
+
     public ClubViewModel(Club club){
         this.clubvmId = club.getClubId();
         this.clubvmName = club.getClubName();
@@ -90,5 +92,13 @@ public class ClubViewModel {
 
     public void setClubvmCompetition(List<CompetitionViewModel> clubvmCompetition) {
         this.clubvmCompetition = clubvmCompetition;
+    }
+
+    public Long getCompetitionId() {
+        return competitionId;
+    }
+
+    public void setCompetitionId(Long competitionId) {
+        this.competitionId = competitionId;
     }
 }

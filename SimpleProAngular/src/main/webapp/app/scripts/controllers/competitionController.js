@@ -13,6 +13,7 @@
         $scope.getThisCompetition = getThisCompetition;
         $scope.updateCompetition = updateCompetition;
         $scope.competitionsClubs = competitionsClubs;
+        $scope.removeClub = removeClub;
 
         $scope.competitionToUpdate = $routeParams.param;
         $scope.compClubs = $routeParams.param5;
@@ -75,6 +76,21 @@
 
         function competitionsClubs(cid){
             Service.setDataCRUD(cid, 'getCompetitionsClubs').then(
+                function (data) {
+                    $scope.competitionClubs = data;
+                    $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs});
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+
+        function removeClub(id, cid){
+            $scope.rem = {
+                coid: cid,
+                clid: id
+            };
+            Service.setDataCRUD($scope.rem, 'removeClub').then(
                 function (data) {
                     $scope.competitionClubs = data;
                     $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs});

@@ -10,15 +10,14 @@
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>Year</th><th>City</th><th>Country</th><th>Name</th><th>Competitions</th></tr>
+    <tr><th>ID</th><th>Year</th><th>City</th><th>Country</th><th>Name</th></tr>
     <tr ng-repeat="c in compClubs">
         <td>{{c.clubvmId}}</td>
         <td>{{c.clubvmBirthYear}}</td>
         <td>{{c.clubvmCity}}</td>
         <td>{{c.clubvmCountry}}</td>
         <td>{{c.clubvmName}}</td>
-        <td><button class="btn btn-danger" type="submit" ng-click="deleteClub(c.clubvmId)">Delete</button></td>
-        <td><button class="btn btn-primary" type="submit" ng-click="getThisClub(c.clubvmId)">Update</button></td>
+        <td><button class="btn btn-danger" type="submit" ng-click="removeClub(c.clubvmId, c.competitionId)">Remove</button></td>
     </tr>
 </table>
 </body>

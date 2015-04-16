@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -72,7 +74,13 @@ public class ClubController {
     public void addClubToCompetition(@RequestBody ClubCompetitionViewModel clubCompetitionViewModel) {
         Competition competition = competitionService.getOne(clubCompetitionViewModel.getCoid());
         Club club = clubService.getOne(clubCompetitionViewModel.getClid());
-        competition.getClubs().add(club);
-        competitionService.save(competition);
+       // Collection<Club> clubs = competition.getClubs();
+        Collection<Competition> competitions = club.getCompetitions();
+        //clubs.add(club);
+        competitions.add(competition);
+        //competition.setClubs(clubs);
+        club.setCompetitions(competitions);
+        //competitionService.save(competition);
+        clubService.save(club);
     }
 }
