@@ -4,10 +4,7 @@ import com.kerkez.model.Club;
 import com.kerkez.model.Competition;
 import com.kerkez.service.ClubService;
 import com.kerkez.service.CompetitionService;
-import com.kerkez.viewModel.ClubCompetitionViewModel;
-import com.kerkez.viewModel.ClubViewModel;
-import com.kerkez.viewModel.UpdateBankViewModel;
-import com.kerkez.viewModel.UpdateClubViewModel;
+import com.kerkez.viewModel.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -71,16 +68,49 @@ public class ClubController {
 
     @RequestMapping("addClubToCompetition")
     @ResponseBody
-    public void addClubToCompetition(@RequestBody ClubCompetitionViewModel clubCompetitionViewModel) {
+    public MessageViewModel addClubToCompetition(@RequestBody ClubCompetitionViewModel clubCompetitionViewModel) {
+        MessageViewModel message = new MessageViewModel();
+        message.setMessageBuy("break");
+        Boolean exist = false;
         Competition competition = competitionService.getOne(clubCompetitionViewModel.getCoid());
         Club club = clubService.getOne(clubCompetitionViewModel.getClid());
-       // Collection<Club> clubs = competition.getClubs();
         Collection<Competition> competitions = club.getCompetitions();
-        //clubs.add(club);
-        competitions.add(competition);
-        //competition.setClubs(clubs);
-        club.setCompetitions(competitions);
-        //competitionService.save(competition);
-        clubService.save(club);
+        for(Competition c: competitions) {
+            if (c.getCompetitionId() == competition.getCompetitionId()) {
+                message.setMessageBuy("This club is already in that competition");
+                exist = true;
+                return message;
+            }
+        }
+         if (!exist) {
+             competitions.add(competition);
+             club.setCompetitions(competitions);
+             clubService.save(club);
+             message.setMessageBuy("Club added");
+             return message;
+         }
+        return message;
+    }
+
+    @RequestMapping("remainClubs")
+    @ResponseBody
+    public List<ClubViewModel> remainClubss(@RequestBody Long id) {
+        List<ClubViewModel> clubList = clubService.load();
+        List<ClubViewModel> clubViewModelList = new ArrayList<ClubViewModel>();
+        Boolean exist= false;
+        for(ClubViewModel cvm: clubList){
+            List<CompetitionViewModel> competitionViewModelList = cvm.getClubvmCompetition();
+            exist = false;
+            for (CompetitionViewModel covm: competitionViewModelList){
+                if(covm.getCompetitionvmId()==id){
+                    exist=true;
+                    break;
+                }
+            }
+            if(!exist){
+                clubViewModelList.add(cvm);
+            }
+        }
+        return clubViewModelList;
     }
 }

@@ -1,0 +1,42 @@
+<!-- 
+ Created on 4/21/2015.
+ @author milos.kerkez
+ -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-image: url("http://cdni.wired.co.uk/1920x1280/d_f/Football.jpg");
+        }
+    </style>
+</head>
+<body>
+<table class="table">
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddBank()" value="ADD BANK">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddCompetition()" value="ADD COMPETITION">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddClub()" value="ADD CLUB">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddManager()" value="ADD MANAGER">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddPlayer()" value="ADD PLAYER">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddContract()" value="ADD CONTRACT">
+    </td>
+    <td>
+        <input class="btn btn-primary" type="submit" ng-click="goToAddClubToCompetition()" value="ADD CLUB TO COMPETITION">
+    </td>
+</table>
+<div>{{noMessage}}</div>
+</body>
+</html>

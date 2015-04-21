@@ -16,6 +16,8 @@
         $scope.addClubToCompetition = addClubToCompetition;
 
         $scope.clubToUpdate = $routeParams.param;
+        $scope.compid = $routeParams.param6;
+        $scope.clubsToInsert = $routeParams.clubstoinsert;
 
         function addClub(clubb) {
             Service.setDataCRUD(clubb, 'setClub').then(
@@ -32,7 +34,6 @@
             Service.getAllData('getViewClub').then(
                 function (data) {
                     $scope.clubs = data;
-                    console.log(data)
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;
@@ -90,7 +91,11 @@
             Service.setDataCRUD($scope.ovo, 'addClubToCompetition').then(
                 function (data) {
                     $scope.clubComp = data;
+                    if($scope.clubComp.messageBuy=="This club is already in that competition"){
+                        $scope.noMessage = $scope.clubComp.messageBuy;
+                    }else{
                     $location.path('first');
+                    }
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

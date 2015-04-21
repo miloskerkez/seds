@@ -10,22 +10,17 @@
 </head>
 <body>
 <form name="addClubToCompetitionForm" ng-submit="addClubToCompetition(compid, cluid)">
-    Select Competition:
-    <label>
-        <select ng-model="compid">
-            <option ng-repeat="comp in competitions" value="{{comp.competitionvmId}}">{{comp.competitionvmName}}</option>
-        </select>
-    </label>
 
-    Select Club:
-    <label>
-        <select ng-model="cluid">
-            <option ng-repeat="clu in clubs" value="{{clu.clubvmId}}">{{clu.clubvmName}}</option>
-        </select>
-    </label>
+    <table class="table">
+        <tr><th>Name</th></tr>
+        <tr ng-repeat="cl in clubsToInsert">
+            <td>{{cl.clubvmName}}</td>
+            <td><button class="btn btn-primary" type="submit" ng-click="addClubToCompetition(compid, cl.clubvmId)">Insert</button></td>
+        </tr>
+    </table>
 
     <th><input class="btn btn-success" type="submit" value="Add Club To Competition"></th>
 </form>
-
+{{noMessage}}
 </body>
 </html>

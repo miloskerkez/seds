@@ -83,6 +83,9 @@ angular
             }).when('/clubToCompetition', {
                 templateUrl:'views/AddClubToCompetition.html',
                 controller: 'ClubCtrl'
+            }).when('/optionsToCreate', {
+                templateUrl:'views/optionsToCreate.html',
+                controller: 'FirstCtrl'
             })
 
             .otherwise('/first');

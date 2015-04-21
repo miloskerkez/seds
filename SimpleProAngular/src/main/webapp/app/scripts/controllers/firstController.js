@@ -22,6 +22,7 @@
         $scope.goToAddPlayer = goToAddPlayer;
         $scope.goToAddContract = goToAddContract;
         $scope.goToAddClubToCompetition = goToAddClubToCompetition;
+        $scope.goToCreating = goToCreating;
 
 
         function goToAddBank() {
@@ -70,6 +71,10 @@
 
         function goToAddClubToCompetition(){
             $location.path('clubToCompetition')
+        }
+
+        function goToCreating(){
+            $location.path('optionsToCreate')
         }
 
 
