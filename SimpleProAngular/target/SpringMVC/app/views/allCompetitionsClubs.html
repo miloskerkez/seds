@@ -7,19 +7,24 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        body {
+            background-image: url("http://www.stlucianewsonline.com/wp-content/uploads/2014/05/football.jpg");
+            background-size: 1950px 1000px;
+        }
+    </style>
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>Year</th><th>City</th><th>Country</th><th>Name</th></tr>
+    <tr><th>Name</th><th>City</th><th>Country</th><th>Year</th></tr>
     <tr ng-repeat="c in compClubs">
-        <td>{{c.clubvmId}}</td>
-        <td>{{c.clubvmBirthYear}}</td>
+        <td>{{c.clubvmName}}</td>
         <td>{{c.clubvmCity}}</td>
         <td>{{c.clubvmCountry}}</td>
-        <td>{{c.clubvmName}}</td>
+        <td>{{c.clubvmBirthYear}}</td>
         <td><button class="btn btn-danger" type="submit" ng-click="removeClub(c.clubvmId, c.competitionId)">Remove</button></td>
     </tr>
 </table>
-<button class="btn btn-danger" type="submit" ng-click="addNewClub(cid)">Add club</button>
+<button class="btn btn-success" type="submit" ng-click="addNewClub(cid)">Add club</button>
 </body>
 </html>

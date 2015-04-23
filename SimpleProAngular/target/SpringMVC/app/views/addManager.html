@@ -12,12 +12,15 @@
 </head>
 <body>
 <form name="addManagerForm" ng-submit="addManager(mana,newBank)">
-    Select Person:
+    <div style="color: #e5e5e5">
+    Select Bank:
+
     <label>
-        <select ng-model="newBank">
+        <select ng-model="newBank" style="color: #030303">
             <option ng-repeat="ban in allbanks" value="{{ban}}">{{ban.bankvmName}}</option>
         </select>
     </label>
+    </div>
     <table class="table">
         <tr>
             <th><input name="FirstNameInput" class="form-control" required type="text" placeholder="FirstName" ng-model="mana.firstName">

@@ -11,9 +11,8 @@
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>Name</th><th>Type</th></tr>
+    <tr><th>Name</th><th>Type</th></tr>
     <tr ng-repeat="co in competitions">
-        <td>{{co.competitionvmId}}</td>
         <td>{{co.competitionvmName}}</td>
         <td>{{co.competitionvmType}}</td>
         <td><button class="btn btn-primary" type="submit" ng-click="competitionsClubs(co.competitionvmId)">Clubs</button></td>

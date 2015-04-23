@@ -12,9 +12,8 @@
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Nationality</th><th>Money</th><th>Bank</th></tr>
-    <tr ng-repeat="ma in managers">
-        <td>{{ma.managervmId}}</td>
+    <tr><th>FirstName</th><th>LastName</th><th>Nationality</th><th>Money</th><th>Bank</th></tr>
+    <tr ng-repeat="ma in managers" style="color: #101010">
         <td>{{ma.managervmFirstName}}</td>
         <td>{{ma.managervmLastName}}</td>
         <td>{{ma.managervmNationality}}</td>

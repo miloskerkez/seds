@@ -5,17 +5,17 @@
     <title></title>
     <style>
         body {
-            background-image: url("http://www.sap-erp.com/wp-content/uploads/2011/06/31_52_6-Bank_web.jpg");
+            background-image: url("http://mykartukredit.com/wp-content/uploads/2014/03/Kenali-Jenis-Jenis-Kartu-Kredit.jpg");
+            background-size: 1950px 1000px;
         }
     </style>
 </head>
 <body>
 <table class="table">
-    <tr><th>ID</th><th>Name</th><th>Managers</th></tr>
+    <tr><th>Name</th><th>Manager(s)</th></tr>
     <tr ng-repeat="b in banks">
-        <td>{{b.bankvmId}}</td>
         <td>{{b.bankvmName}}</td>
-        <td ng-repeat="m in b.bankvmManagers">{{m.managervmLastName}}</td>
+        <td><span ng-repeat="m in b.bankvmManagers">{{m.managervmLastName}}<br/></span></td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteBank(b.bankvmId)">Delete</button></td>
         <td><button class="btn btn-primary" type="submit" ng-click="getThisBank(b.bankvmId)">Update</button></td>
     </tr>

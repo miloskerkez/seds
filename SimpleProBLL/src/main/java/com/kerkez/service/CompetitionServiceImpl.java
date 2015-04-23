@@ -59,6 +59,7 @@ public class CompetitionServiceImpl implements CompetitionService {
     public void update(UpdateCompetitionViewModel updateCompetitionViewModel) {
         Competition competition = competitionRepository.findOne(updateCompetitionViewModel.getUcvmId());
         competition.setCompetitionName(updateCompetitionViewModel.getUcvmName());
+        competition.setCompetitionType(updateCompetitionViewModel.getUcvmType());
         competitionRepository.save(competition);
     }
 }

@@ -14,10 +14,12 @@
         $scope.getThisClub = getThisClub;
         $scope.updateClub = updateClub;
         $scope.addClubToCompetition = addClubToCompetition;
+        $scope.competitionsClubs = competitionsClubs;
 
         $scope.clubToUpdate = $routeParams.param;
         $scope.compid = $routeParams.param6;
         $scope.clubsToInsert = $routeParams.clubstoinsert;
+
 
         function addClub(clubb) {
             Service.setDataCRUD(clubb, 'setClub').then(
@@ -90,12 +92,25 @@
             };
             Service.setDataCRUD($scope.ovo, 'addClubToCompetition').then(
                 function (data) {
-                    $scope.clubComp = data;
-                    if($scope.clubComp.messageBuy=="This club is already in that competition"){
-                        $scope.noMessage = $scope.clubComp.messageBuy;
-                    }else{
-                    $location.path('first');
-                    }
+                    Service.setDataCRUD(coid, 'remainClubs').then(
+                        function (data) {
+                            $scope.clubsToInsert = data;
+                            $location.path('clubToCompetition').search({param6: coid, clubstoinsert: $scope.clubsToInsert});
+                        },
+                        function (error) {
+                            $scope.noMessage = "error!!!!" + error;
+                        });
+
+                },
+                function (error) {
+                    $scope.noMessage = "error!!!!" + error;
+                });
+        }
+        function competitionsClubs(cid){
+            Service.setDataCRUD(cid, 'getCompetitionsClubs').then(
+                function (data) {
+                    $scope.competitionClubs = data;
+                    $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs, cid: cid});
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

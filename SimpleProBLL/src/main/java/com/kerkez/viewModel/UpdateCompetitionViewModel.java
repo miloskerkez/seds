@@ -9,6 +9,8 @@ public class UpdateCompetitionViewModel {
 
     private String ucvmName;
 
+    private String ucvmType;
+
     public Long getUcvmId() {
         return ucvmId;
     }
@@ -23,5 +25,13 @@ public class UpdateCompetitionViewModel {
 
     public void setUcvmName(String ucvmName) {
         this.ucvmName = ucvmName;
+    }
+
+    public String getUcvmType() {
+        return ucvmType;
+    }
+
+    public void setUcvmType(String ucvmType) {
+        this.ucvmType = ucvmType;
     }
 }

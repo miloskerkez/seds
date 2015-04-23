@@ -7,9 +7,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        body {
+            background-image: url("http://kchanews.com/wp-content/uploads/2014/07/bigstock-Football-soccer-match-A-play-60893714.jpg");
+            background-size: 1950px 1000px;
+        }
+    </style>
 </head>
 <body>
-<table class="table">
+<table class="table" style="color: #f7f7f7">
     <tr><th>FirstName</th><th>LastName</th><th>Nationality</th><th>Price</th><th>Year</th><th>Club</th></tr>
     <tr ng-repeat="pl in managerPlayers">
         <td>{{pl.playervmFirstName}}</td>
@@ -18,8 +24,6 @@
         <td>{{pl.playervmPrice}}</td>
         <td>{{pl.playervmYear}}</td>
         <td>{{pl.playervmClub}}</td>
-        <td><button class="btn btn-danger" type="submit" ng-click="deletePlayer(pl.playervmId)">Delete</button></td>
-        <td><button class="btn btn-primary" type="submit" ng-click="getThisPlayer(pl.playervmId)">Update</button></td>
     </tr>
 </table>
 </body>

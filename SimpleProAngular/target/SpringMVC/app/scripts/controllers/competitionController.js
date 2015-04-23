@@ -94,7 +94,7 @@
             Service.setDataCRUD($scope.rem, 'removeClub').then(
                 function (data) {
                     $scope.competitionClubs = data;
-                    $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs});
+                    $location.path('getCompetitionsClubs').search({param5: $scope.competitionClubs, cid:cid});
                 },
                 function (error) {
                     $scope.noMessage = "error!!!!" + error;

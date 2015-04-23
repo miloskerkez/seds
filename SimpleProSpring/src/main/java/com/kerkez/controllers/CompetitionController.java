@@ -56,6 +56,7 @@ public class CompetitionController {
         UpdateCompetitionViewModel updateCompetitionViewModel = new UpdateCompetitionViewModel();
         updateCompetitionViewModel.setUcvmId(competition.getCompetitionId());
         updateCompetitionViewModel.setUcvmName(competition.getCompetitionName());
+        updateCompetitionViewModel.setUcvmType(competition.getCompetitionType());
         return updateCompetitionViewModel;
     }
 
