@@ -13,7 +13,7 @@
 <body>
 <table class="table">
     <tr><th>Name</th><th>Manager(s)</th></tr>
-    <tr ng-repeat="b in banks">
+    <tr ng-repeat="b in banks" ng-if="b.bankvmId>1">
         <td>{{b.bankvmName}}</td>
         <td><span ng-repeat="m in b.bankvmManagers">{{m.managervmLastName}}<br/></span></td>
         <td><button class="btn btn-danger" type="submit" ng-click="deleteBank(b.bankvmId)">Delete</button></td>

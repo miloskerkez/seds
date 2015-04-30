@@ -17,7 +17,7 @@
 <body>
 <table class="table" style="color: #f7f7f7">
     <tr><th>FirstName</th><th>LastName</th><th>Nationality</th><th>Price</th><th>Year</th><th>Club</th><th>Manager</th></tr>
-    <tr ng-repeat="pl in allPlayerss">
+    <tr ng-repeat="pl in allPlayerss" ng-if="pl.playervmId>1">
         <td>{{pl.playervmFirstName}}</td>
         <td>{{pl.playervmLastName}}</td>
         <td>{{pl.playervmNationality}}</td>

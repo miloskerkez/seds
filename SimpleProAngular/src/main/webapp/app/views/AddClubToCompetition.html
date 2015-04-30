@@ -19,7 +19,7 @@
 
     <table class="table">
         <tr><th>Name</th></tr>
-        <tr ng-repeat="cl in clubsToInsert">
+        <tr ng-repeat="cl in clubsToInsert" ng-if="cl.clubvmId>1">
             <td>{{cl.clubvmName}}</td>
             <td><button class="btn btn-primary" type="submit" ng-click="addClubToCompetition(compid, cl.clubvmId)">Insert</button></td>
         </tr>
